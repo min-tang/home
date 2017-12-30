@@ -58,10 +58,10 @@ Advisor:  Prof. Jinxiang Dong
 - Ke-Li Cheng, Ruo-feng Tong, Min Tang, Michel Sarkis, Jingye Qian, Parametric Human Body Reconstruction Based on Sparse Key Points, IEEE Transactions on Visualization and Computer Graphics, 2016， 22(11): 2467-2479.
 
 ### 2015
-- Zhendong Wang, Min Tang, Ruofeng Tong, Dinesh Manocha, TightCCD: Efficient and Robust Continuous Collision Detection using Tight Error Bounds, Computer Graphics Forum, 34(7): 289-298, (Proc. of Pacific Graphics), 2015. http://gamma.cs.unc.edu/BSC/ 
+- Zhendong Wang, Min Tang, Ruofeng Tong, Dinesh Manocha, TightCCD: Efficient and Robust Continuous Collision Detection using Tight Error Bounds, Computer Graphics Forum, 34(7): 289-298, (Proc. of Pacific Graphics), 2015. [http://gamma.cs.unc.edu/BSC/](http://gamma.cs.unc.edu/BSC/)
 
 ### 2014
-- Min Tang, Ruofeng Tong, Zhendong Wang, Dinesh Manocha, Fast and Exact Continuous Collision Detection with Bernstein Sign Classification, ACM Transactions on Graphics, 33(6), Article 186 (November 2014), 8 pages (Proc. of ACM SIGGRAPH Asia), 2014. http://gamma.cs.unc.edu/BSC/
+- Min Tang, Ruofeng Tong, Zhendong Wang, Dinesh Manocha, Fast and Exact Continuous Collision Detection with Bernstein Sign Classification, ACM Transactions on Graphics, 33(6), Article 186 (November 2014), 8 pages (Proc. of ACM SIGGRAPH Asia), 2014. [http://gamma.cs.unc.edu/BSC/](http://gamma.cs.unc.edu/BSC/)
 - Feng Wang, Lanfen Lin, Min Tang, A New Sketch-based 3D Model Retrieval Approach by using Global and Local Features, Graphical Models, Vol. 76, No. 3, pp.128-139, May 2014.
 
 ### 2013
@@ -69,7 +69,7 @@ Advisor:  Prof. Jinxiang Dong
 - Ruofeng Tong, Di Xie, Min Tang, Upper Body Human Detection and Segmentation in Low Contrast Video, IEEE Transactions on Circuits and Systems for Video Technology, 23(9): 1502-1509, 2013. 
 
 ### 2012
-- Min Tang, Dinesh Manocha, Miguel A. Otaduy, Ruofeng Tong, Continuous Penalty Forces, ACM Transactions on Graphics, 31(4), Article 107 (July 2012), 9 pages (Proc. of ACM SIGGRAPH). 2012. http://gamma.cs.unc.edu/CPF/
+- Min Tang, Dinesh Manocha, Miguel A. Otaduy, Ruofeng Tong, Continuous Penalty Forces, ACM Transactions on Graphics, 31(4), Article 107 (July 2012), 9 pages (Proc. of ACM SIGGRAPH). 2012. [http://gamma.cs.unc.edu/CPF/](http://gamma.cs.unc.edu/CPF/)
 - Min Tang, Jieyi Zhao, Ruofeng Tong, Dinesh Manocha, GPU accelerated Convex Hull Computation, Computers & Graphics, 36(5): 498–506, (Proceedings of SMI 2012), 2012. http://gamma.cs.unc.edu/ghull/
 - Peng Du, Min Tang, Ruofeng Tong, Fast Continuous Collision Culling with Deforming Non-collinear Filters, Computer Animation and Vitual Worlds, 23(3-4):375-383, (Proceedings of CASA 2012), 2012.http://give.zju.edu.cn/NCF/
 - Xiaohong Zhang, Min Tang, Zhicheng Jiang, Ruofeng Tong, Video Fusion Oriented Object Motion Removing, Journal of Computational Information Systems, 8(6): 2317- 2324, 2012.
