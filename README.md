@@ -1,31 +1,10 @@
 ## Welcome to Min Tang's Home Page                                                                                                                                                                                        
+###Summary
+Min Tang is a professor of the college of computer science at Zhejiang University, China. He received his B.S., M.S., and Ph.D. from Zhejiang University in 1994, 1996 and 1999, respectively. From June 2003 to May 2004, he was a visiting scholar at Wichita State University. Between April 2007 to April 2008, and September 2016 to April 2017, he was a visiting scholar at the University of North Carolina at Chapel Hill. His research interests include collision detection/handling, cloth simulation, and GPU-based computation acceleration. He has published more than 90 journal and conference papers. He has published some papers at SIGGRAPH, SIGGRAPH Asia, Eurographics, Pacific Graphics, ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D), Eurographics Symposium on Rendering, ACM Symposium on Solid and Physical Modeling, Computer Graphics International, ACM Transaction on Graphics, IEEE Transactions on Visualization and Computer Graphics, Computer Graphics Forum, Graphical Models, Computers & Graphics, The Visual Computer, Advanced Engineering Informatics, etc. He has served as a reviewer for many international conference (SIGGRAPH, SIGGRPAH Asia, I3D, HPG, WSCG, etc.) and for many journals (ACM Transaction on Graphics, IEEE Transactions on Visualization and Computer Graphics, IEEE Transactions on Haptics, The Visual Computer, etc.)
 
-I am a professor of Zhejiang University, China.
+###Address 
+College of Computer Science and Technology, Zhejiang University,
+Hangzhou, Zhejiang, P.R. China, 310027
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tigerxyz-tang/tangmin.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+###Email
+tang_m@zju.edu.cn
