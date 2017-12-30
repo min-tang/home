@@ -44,7 +44,7 @@ Advisor:  Prof. Jinxiang Dong
 ## Recent Publications:
 
 ### 2017
-- Tongtong Wang, Zhihua Liu, Min Tang, Roufeng Tong, and Dinesh Manocha, Efficient and Reliable Self-Collision Culling using Unprojected Normal Cones, Computer Graphics Forum, 36(8), 487-498, 2017. http://gamma.cs.unc.edu/SCC/
+- Tongtong Wang, Zhihua Liu, Min Tang, Roufeng Tong, and Dinesh Manocha, Efficient and Reliable Self-Collision Culling using Unprojected Normal Cones, Computer Graphics Forum, 36(8), 487-498, 2017. [http://gamma.cs.unc.edu/SCC/](http://gamma.cs.unc.edu/SCC/)
 - Juntao Ye, Guanghui Ma, Liguo Jiang, Lan Chen, Jituo Li, Gang Xiong, Xiaopeng Zhang, Min Tang, A Unified Cloth Untangling Framework Through Discrete Collision Detection, Computer Graphics Forum (Proceedings of Pacific Graphics 2017), 36(7), 217-228, 2017.
 
 ### 2016
