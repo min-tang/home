@@ -48,7 +48,7 @@ Advisor:  Prof. Jinxiang Dong
 - Juntao Ye, Guanghui Ma, Liguo Jiang, Lan Chen, Jituo Li, Gang Xiong, Xiaopeng Zhang, Min Tang, A Unified Cloth Untangling Framework Through Discrete Collision Detection, Computer Graphics Forum (Proceedings of Pacific Graphics 2017), 36(7), 217-228, 2017.
 
 ### 2016
-- Min Tang, Huamin Wang, Le Tang, Ruofeng Tong, Dinesh Manocha, CAMA: Contact-Aware Matrix Assembly with Unified Collision Handling for GPU-based Cloth Simulation, Computer Graphics Forum, 35(2): 511–521, (Proceedings of Eurographics 2016), 2016. http://gamma.cs.unc.edu/CAMA/
+- Min Tang, Huamin Wang, Le Tang, Ruofeng Tong, Dinesh Manocha, CAMA: Contact-Aware Matrix Assembly with Unified Collision Handling for GPU-based Cloth Simulation, Computer Graphics Forum, 35(2): 511–521, (Proceedings of Eurographics 2016), 2016. [http://gamma.cs.unc.edu/CAMA/]
 - Zhendong Wang, Tongtong Wang, Min Tang, Ruofeng Tong, Efficient and robust strain limiting and treatment of simultaneous collisions with semidefinite programming, Computational Visual Media, 2(2): 119–130, (Proceedings of CVM 2016), 2016.
 - Ke-Li Cheng, Xuan Ju, Ruo-Feng Tong, Min Tang, Jian Chang, Jian-Jun Zhang, A Linear Approach for Depth and Colour Camera Calibration Using Hybrid Parameters, Journal of Computer Science and Technology, 31(3): 479–488, (Proceedings of CVM 2016), 2016.
 - Yanlong Tang, Ruofeng Tong, Min Tang, Yu Zhang, Depth Incorporating with Color Improves Salient Object Detection, The Visual Computer, 32(1): 111-121, 2016.
