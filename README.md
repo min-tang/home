@@ -44,6 +44,9 @@ Advisor:  Prof. Jinxiang Dong
 
 ## Recent Publications:
 
+### Google Scholar [https://scholar.google.com/citations?user=E1RM9OUAAAAJ](https://scholar.google.com/citations?user=E1RM9OUAAAAJ)
+### Access from China [https://xues.glgoo.com/citations?hl=zh-CN&user=E1RM9OUAAAAJ&view_op=list_works&sortby=pubdate] (https://xues.glgoo.com/citations?hl=zh-CN&user=E1RM9OUAAAAJ&view_op=list_works&sortby=pubdate)
+
 ### 2017
 - Tongtong Wang, Zhihua Liu, Min Tang, Roufeng Tong, and Dinesh Manocha, Efficient and Reliable Self-Collision Culling using Unprojected Normal Cones, Computer Graphics Forum, 36(8), 487-498, 2017. [http://gamma.cs.unc.edu/SCC/](http://gamma.cs.unc.edu/SCC/)
 
