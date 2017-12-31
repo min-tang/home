@@ -1,7 +1,7 @@
 # Welcome to Min Tang's Home Page                                                                                                       
 
 ## Summary
-Min Tang is a professor of the college of computer science at Zhejiang University, China. He received his B.S., M.S., and Ph.D. from Zhejiang University in 1994, 1996 and 1999, respectively. From June 2003 to May 2004, he was a visiting scholar at Wichita State University. Between April 2007 to April 2008, and September 2016 to April 2017, he was a visiting scholar at the University of North Carolina at Chapel Hill. His research interests include collision detection/handling, cloth simulation, and GPU-based computation acceleration. He has published more than 90 journal and conference papers. He has published some papers at SIGGRAPH, SIGGRAPH Asia, Eurographics, Pacific Graphics, ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D), Eurographics Symposium on Rendering, ACM Symposium on Solid and Physical Modeling, Computer Graphics International, ACM Transaction on Graphics, IEEE Transactions on Visualization and Computer Graphics, Computer Graphics Forum, Graphical Models, Computers & Graphics, The Visual Computer, Advanced Engineering Informatics, etc. He has served as a reviewer for many international conference (SIGGRAPH, SIGGRPAH Asia, I3D, HPG, WSCG, etc.) and for many journals (ACM Transaction on Graphics, IEEE Transactions on Visualization and Computer Graphics, IEEE Transactions on Haptics, The Visual Computer, etc.)
+Min Tang is a professor of the college of computer science and technology, Zhejiang University, China. He received his B.S., M.S., and Ph.D. from Zhejiang University in 1994, 1996 and 1999, respectively. From June 2003 to May 2004, he was a visiting scholar at Wichita State University. Between April 2007 to April 2008, and September 2016 to April 2017, he was a visiting scholar at the University of North Carolina at Chapel Hill. His research interests include collision detection/handling, cloth simulation, and GPU-based computation acceleration. He has published more than 90 journal and conference papers, including conference papers at SIGGRAPH, SIGGRAPH Asia, Eurographics, Pacific Graphics, ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D), Eurographics Symposium on Rendering, ACM Symposium on Solid and Physical Modeling, Computer Graphics International, and journal papers at ACM Transaction on Graphics, IEEE Transactions on Visualization and Computer Graphics, Computer Graphics Forum, Graphical Models, Computers & Graphics, The Visual Computer, Advanced Engineering Informatics, etc. He has served as a reviewer for many international conference (SIGGRAPH, SIGGRPAH Asia, I3D, HPG, WSCG, etc.) and journals (ACM Transaction on Graphics, IEEE Transactions on Visualization and Computer Graphics, IEEE Transactions on Haptics, The Visual Computer, etc.)
 
 ## Address 
 College of Computer Science and Technology, Zhejiang University,
@@ -27,19 +27,19 @@ Computer Science and Engineering Department, Zhejiang University, 1990/9 – 199
 Advisor:  Prof. Jinxiang Dong
 
 ## Research and Working Experience:
-**2013/1 – present**	Professor of Zhejiang University, teaching Computer Graphics Courses for under-graduated and graduated students at Zhejiang University.
+**2013/1 – present:**	Professor of Zhejiang University, teaching Computer Graphics Courses for under-graduated and graduated students at Zhejiang University.
 
-**2001/1 – 2012/12**	Associate Professor of Zhejiang University, teaching Computer Graphics Courses for under-graduated and graduated students at Zhejiang University.
+**2001/1 – 2012/12:**	Associate Professor of Zhejiang University, teaching Computer Graphics Courses for under-graduated and graduated students at Zhejiang University.
 
-**1999/10 – 2000/12**	Assistant Professor of Zhejiang University, teaching Computer Graphics Courses for graduated students at Zhejiang University.
+**1999/10 – 2000/12:**	Assistant Professor of Zhejiang University, teaching Computer Graphics Courses for graduated students at Zhejiang University.
 
-**2016/9-2017/5**	Visited the GAMMA group headed by Prof. Dinesh Manocha and Prof. Min Lin as a visiting scholar at Department of Computer Science, the University of North Carolina at Chapel Hill, supported by NSF China.
+**2016/9-2017/5:**	Visited the GAMMA group headed by Prof. Dinesh Manocha and Prof. Min Lin as a visiting scholar at Department of Computer Science, the University of North Carolina at Chapel Hill, supported by NSF China.
 
-**2015/8-2015/9**	Visited MIRALab leaded by Prof. Nadia Magnenat-Thalmann, at the University of Geneva, Swiss (Supported by EU University Collaboration Project, AniNex 612627).
+**2015/8-2015/9:**	Visited MIRALab leaded by Prof. Nadia Magnenat-Thalmann, at the University of Geneva, Swiss (Supported by EU University Collaboration Project, AniNex 612627).
 
-**2007/4-2008/4**	Visited the GAMMA group headed by Prof. Dinesh Manocha and Prof. Min Lin as a visiting scholar at Department of Computer Science, the University of North Carolina at Chapel Hill, supported by the Future Academic Star project by Zhejiang University.
+**2007/4-2008/4:**	Visited the GAMMA group headed by Prof. Dinesh Manocha and Prof. Min Lin as a visiting scholar at Department of Computer Science, the University of North Carolina at Chapel Hill, supported by the Future Academic Star project by Zhejiang University.
 
-**2003/6 – 2004/5**	Visited the Research group headed by Prof. Shang-Ching Chou as a visiting scholar, supported by the NFS project on Geometric Constraint Solving, at Computer Science Department, Wichita State University, USA.
+**2003/6 – 2004/5:**	Visited the Research group headed by Prof. Shang-Ching Chou as a visiting scholar, supported by the NFS project on Geometric Constraint Solving, at Computer Science Department, Wichita State University, USA.
 
 
 ## Recent Publications:
