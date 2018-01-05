@@ -30,26 +30,21 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>home</h1>
-        
-          <p>tangmin's homepage</p>
-        
-        <p class="view"><a href="https://github.com/min-tang/home">View the Project on GitHub <small></small></a></p>
+        <h1>Min Tang's Homepage</h1>
+         <p>Publications</p>
         <ul>
-        
-          <li><a href="https://github.com/min-tang/home">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://min-tang.github.io/home/">Back to<strong>Home</strong></a></li>
         </ul>
       </header>
       <section>
 
-      <h1 id="welcome-to-min-tangs-home-page">Welcome to Min Tang’s Home Page</h1>
 
-<h2 id="recent-publications">Recent Publications:</h2>
-
-<h3 id="google-scholar">Google Scholar</h3>
+<h2 id="google-scholar">Papers on Google Scholar</h3>
 <p><a href="https://scholar.google.com/citations?user=E1RM9OUAAAAJ">https://scholar.google.com/citations?user=E1RM9OUAAAAJ</a></p>
 
 <p><a href="https://xues.glgoo.com/citations?hl=zh-CN&amp;user=E1RM9OUAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">https://xues.glgoo.com/citations?hl=zh-CN&amp;user=E1RM9OUAAAAJ&amp;view_op=list_works&amp;sortby=pubdate</a> (Access from China)</p>
+
+<h2 id="recent-publications">Publications:</h2>
 
 <h3 id="2017">2017</h3>
 <ul>
