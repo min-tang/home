@@ -41,6 +41,9 @@ Advisor:  Prof. Jinxiang Dong
 
 **2003/6 – 2004/5:**	Visited the Research group headed by Prof. Shang-Ching Chou as a visiting scholar, supported by the NFS project on Geometric Constraint Solving, at Computer Science Department, Wichita State University, USA.
 
+## Recent Research:
+
+GPU-accelerated High Resolution Cloth Simulation [http://gamma.cs.unc.edu/CAMA/](CAMA)
 
 ## Recent Publications:
 
