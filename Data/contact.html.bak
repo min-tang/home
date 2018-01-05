@@ -31,6 +31,7 @@
     <div class="wrapper">
       <header>
         <h1>Min Tang's Homepage</h1>
+         <p>Contact Information</p>
         <ul>
           <li><a href="https://min-tang.github.io/home/">Back to<strong>Home</strong></a></li>
         </ul>
@@ -38,6 +39,8 @@
       <section>
 
 <!--      <h1 id="welcome-to-min-tangs-home-page">Welcome to Min Tang’s Home Page</h1> -->
+<p align="center"><font face="verdana,sans-serif">&nbsp;</font>
+<img border="0" src="./tang1218.JPG" width="384" height="512"></p>
 
 <h2 id="address">Address</h2>
 <p>College of Computer Science and Technology, Zhejiang University,
