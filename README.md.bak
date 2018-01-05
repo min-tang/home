@@ -13,6 +13,8 @@ Min Tang is a professor of the college of computer science and technology, Zheji
 
 ## Recent Research:
 
+[Link](Data/projects.html)
+
 GPU-accelerated High Resolution Cloth Simulation [CAMA](http://gamma.cs.unc.edu/CAMA/)
 GPU-accelerated High Resolution Cloth Simulation [CAMA](CAMA/cama.html)
 
