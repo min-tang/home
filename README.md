@@ -43,7 +43,8 @@ Advisor:  Prof. Jinxiang Dong
 
 ## Recent Research:
 
-GPU-accelerated High Resolution Cloth Simulation [http://gamma.cs.unc.edu/CAMA/](CAMA)
+GPU-accelerated High Resolution Cloth Simulation [CAMA](http://gamma.cs.unc.edu/CAMA/)
+GPU-accelerated High Resolution Cloth Simulation [CAMA](CAMA/cama.html)
 
 ## Recent Publications:
 
