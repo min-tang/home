@@ -42,6 +42,8 @@
 <h2 id="google-scholar">Projects</h2>
 
 <p><a href="http://gamma.cs.unc.edu/CAMA/">GPU-accelerated High Resolution Cloth Simulation</a></p>
+<p><a href="../BVH-OR/">Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring</a></p>
+<p><a href="../PSCC/">Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring</a></p>
 
 
       </section>
