@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0028)http://gamma.cs.unc.edu/SCC/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+Efficient and Reliable Self-Collision Culling using Unprojected Normal Cones
+</title>
+
+<meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
+</head><body link="#95DDFF" bgcolor="#333333" text="#dddddd" vlink="#AAAAAA"><font face="verdana,sans-serif"><p:colorscheme colors="#666699,#ffffff,#3e3e5c,#ccff66,#60597b,#6666ff,#99ccff,#ffff99">
+<div style="mso-char-wrap: 1; mso-kinsoku-overflow: 1; tab-interval: .5625in" class="O" v:shape="_x0000_s1026"><font size="+4">Efficient and Reliable Self-Collision Culling using Unprojected Normal Cones</font></div>
+<h3>by
+Tongtong Wang<sup><font face="Verdana">1</font></sup><font face="verdana,sans-serif">, 
+Zhihua Liu<sup><font face="Verdana">1</font></sup><font face="verdana,sans-serif">, 
+ <a href="http://www.cs.unc.edu/~tangm/">Min Tang</a><sup><font face="Verdana">1*</font></sup><font face="verdana,sans-serif">, 
+ Ruofeng Tong<sup><font face="Verdana">1</font></sup><font face="verdana,sans-serif">, 
+and <a href="http://www.cs.unc.edu/~dm/">Dinesh Manocha</a><sup><font face="Verdana">2,1</font></sup><font face="verdana,sans-serif">
+</font></font></font></font></font></h3><font face="verdana,sans-serif"><font face="verdana,sans-serif"><font size="4" face="Times New Roman">
+</font><p><font size="4" face="Times New Roman"></font><i><font size="4" face="Times New Roman">1 - Zhejiang University, 
+China</font></i>
+</p><p><i><font size="4" face="Times New Roman">2 - University of North Carolina at Chapel 
+Hill, USA</font></i>
+</p><p><i><font size="4" face="Times New Roman">*Tongtong Wang and Zhihua Liu are joint first authors. Min Tang is the
+corresponding author.</font></i>
+</p><p align="center"><font face="verdana,sans-serif">&nbsp;</font>
+<img border="0" src="./files/all-benchmarks.png" width="1402" height="1058"></p><p>
+<font face="verdana,sans-serif"><i><b>Benchmarks: </b></i>  
+We use seven challenging benchmarks arising from deformable and cloth simulations. We compare the performance of our DCD and CCD algorithms with prior methods. </font>
+<font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Abstract</b></font>
+</font></p><p><font face="verdana,sans-serif">
+We present an efficient and accurate algorithm for self-collision detection in deformable models. Our approach can perform discrete and continuous collision queries on triangulated meshes. We present a simple and linear time algorithm to perform the normal cone test using the unprojected 3D vertices, which reduces to a sequence point-plane classification tests. Moreover, we present a hierarchical traversal scheme that can significantly reduce the number of normal cone tests and the memory overhead using front-based normal cone culling. The overall  algorithm can reliably
+detect all (self) collisions in models composed of hundred of thousands of triangles. We observe considerable performance improvement over prior CCD algorithms.
+<br>
+&nbsp;</font></p><h2><font face="verdana,sans-serif">Contents </font></h2><font face="verdana,sans-serif">
+</font></font><p><font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="http://gamma.cs.unc.edu/SCC/scc.pdf">Paper </a>&nbsp;(PDF 2.48 MB) 
+</font></font><font face="verdana,sans-serif"> 
+</font></font><font face="Verdana" color="#ffffff"></font></p><p><font face="Verdana" color="#ffffff">Tongtong Wang, Zhihua Liu, Min Tang, Roufeng Tong, and Dinesh Manocha, Efficient and Reliable Self-Collision Culling using Unprojected Normal Cones, Computer Graphics Forum, accepted, 2017.</font><font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif">&nbsp;&nbsp;&nbsp;@article{scc17,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author = {Wang, Tongtong and Liu, Zhihua and Tang, Min and Tong, Ruofeng and Manocha, Dinesh},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = {Efficient and Reliable Self-Collision Culling using Unprojected Normal Cones},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal = {Computer Graphics Forum},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volume = {36},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number = {8},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pages = {487--498},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year = {2017},
+<br>&nbsp;&nbsp;}
+
+</font></p><p><font face="verdana,sans-serif"><a href="http://gamma.cs.unc.edu/SCC/scc.wmv">Video</a> <font color="#ffffff" face="Verdana">(19 MB) </font></font><font face="verdana,sans-serif">
+</font></p><h2><font face="verdana,sans-serif">&nbsp;</font></h2><font face="verdana,sans-serif">
+<h2>Related Links </h2>
+<p><a href="http://gamma.cs.unc.edu/PCD/">MCCD: Multi-Core Collision Detection between 
+Deformable Models using Front-Based Decomposition</a>
+</p><p><a href="http://gamma.cs.unc.edu/CBC/">Interactive Continuous Collision 
+Detection between Deformable Models using Connectivity-Based Culling</a>
+</p><p><a href="http://gamma.cs.unc.edu/CAMA/">CAMA: Contact-Aware Matrix Assembly with Unified Collision Handling for GPU-based Cloth Simulation</a> 
+</p><p><a href="http://gamma.cs.unc.edu/BSC/index.htm#TightCCD">TightCCD: Efficient and Robust Continuous Collision Detection using Tight Error Bounds</a> 
+</p><p><a href="http://gamma.cs.unc.edu/BSC/">Fast and Exact Continuous Collision Detection with Bernstein Sign Classification</a> 
+</p><p><a href="http://gamma.cs.unc.edu/gcloth/">A GPU-based Streaming Algorithm for High-Resolution Cloth Simulation</a> 
+</p><p><a href="http://gamma.cs.unc.edu/CPF/">Continuous Penalty Forces</a>
+</p><p><a href="http://gamma.cs.unc.edu/DynamicB/">UNC dynamic model benchmark repository</a> 
+</p><p><a href="http://gamma.cs.unc.edu/CSTREAMS/">Collision-Streams: Fast GPU-based Collision Detection for Deformable Models
+</a>
+</p><p><a href="http://gamma.cs.unc.edu/DNF/">Fast Continuous Collision Detection using Deforming Non-Penetration 
+	Filters</a>
+</p><p><a href="http://gamma.cs.unc.edu/RTRI/">Fast Collision Detection for 
+Deformable Models using Representative-Triangles</a>
+</p><p><a href="http://gamma.cs.unc.edu/DEFORMCD/">DeformCD: Collision Detection 
+between Deforming Objects</a>
+</p><p><a href="http://gamma.cs.unc.edu/SELFCD/">Self-CCD: Continuous Collision 
+Detection for Deforming Objects</a> 
+</p><p><a href="http://gamma.cs.unc.edu/CDCD/">Interactive Collision Detection 
+between Deformable Models using Chromatic Decomposition</a> 
+</p><p><a href="http://gamma.cs.unc.edu/DVD/">Fast Proximity Computation Among 
+Deformable Models using Discrete Voronoi Diagrams</a> 
+</p><p><a href="http://gamma.cs.unc.edu/CULLIDE/">CULLIDE: Interactive Collision 
+Detection between Complex Models using Graphics Hardware </a>
+</p><p><a href="http://gamma.cs.unc.edu/RCULLIDE/">RCULLIDE: Fast and Reliable 
+Collision Culling using Graphics Processors </a>
+</p><p><a href="http://gamma.cs.unc.edu/QCULLIDE/">Quick-CULLIDE: Efficient Inter- 
+and Intra-Object Collision Culling using Graphics Hardware</a> 
+</p><p><a href="http://gamma.cs.unc.edu/research/collision/">Collision Detection</a> 
+
+</p><p><a href="http://gamma.cs.unc.edu/">UNC GAMMA Group </a>
+</p><h2>Acknowledgements </h2>
+<p>
+This research is supported in part by NSFC (61572423, 61572424), Zhejiang Provincial NSFC (LZ16F020003), and the Doctoral Fund of Ministry of Education of China (20130101110133). Dinesh Manocha is supported in part by ARO contract W911NF-14-1-0437, and the National Thousand Talents Program of China.
+</p>
+<p>&nbsp;</p>
+<p></p><p>CB #3175, Department of Computer Science <br>University of North Carolina 
+<br>Chapel Hill, NC 27599-3175 <br>919.962.1749 <br><a href="mailto:geom@cs.unc.edu">geom@cs.unc.edu</a> 
+</p><p></p></font>
+</font></p:colorscheme></font></body></html>
