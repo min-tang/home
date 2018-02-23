@@ -52,6 +52,8 @@
 <ul>
   <li>
     <p>Min Tang, Zhongyuan Liu, Ruofeng Tong, Dinesh Manocha, PSCC: Parallel Self-Collision Culling with Spatial Hashing on GPUs, accepted by I3D 2018. <a href="https://min-tang.github.io/home/PSCC/">https://min-tang.github.io/home/PSCC/</a></p>
+  </li>
+  <li>
     <p>Xinlei Wang, Min Tang, Dinesh Manocha, Ruofeng Tong, Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring, accepted by Eurographics 2018. <a href="https://min-tang.github.io/home/BVH-OR/">https://min-tang.github.io/home/BVH-OR/</a></p>
   </li>
 </ul>
