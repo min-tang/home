@@ -44,6 +44,7 @@
 <p><a href="http://gamma.cs.unc.edu/CAMA/">GPU-accelerated High Resolution Cloth Simulation</a></p>
 <p><a href="../BVH-OR/">Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring</a></p>
 <p><a href="../PSCC/">PSCC: Parallel Self-Collision Culling with Spatial Hashing on GPUs</a></p>
+<p><a href="../SCC/">Efficient and Reliable Self-Collision Culling using Unprojected Normal Cones</a></p>
 
 
       </section>
