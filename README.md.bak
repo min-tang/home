@@ -5,16 +5,16 @@ Min Tang is a professor of the college of computer science and technology, Zheji
 
 ## Contact Information
 
-[Link](Data/contact.html) 
+[Link](Data/contact.html)
 
-## Education and Working Experience:
+## Education and Working Experience
 
 [Link](Data/work.html)
 
-## Recent Research:
+## Recent Research
 
 [Link](Data/projects.html)
 
-## Recent Publications:
+## Recent Publications
 
 [Link](Data/papers.html)
