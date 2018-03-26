@@ -18,9 +18,9 @@
 <!-- End Jekyll SEO tag -->
 
 
-    <link href="./home-1_files/css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./home-1_files/style.css">
-    <script src="./home-1_files/scale.fix.js.下载"></script>
+    <link href="./files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./files/style.css">
+    <script src="./files/scale.fix.js.下载"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!--[if lt IE 9]>

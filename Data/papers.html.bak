@@ -18,9 +18,9 @@
 <!-- End Jekyll SEO tag -->
 
 
-    <link href="./home-1_files/css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./home-1_files/style.css">
-    <script src="./home-1_files/scale.fix.js.下载"></script>
+    <link href="./files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./files/style.css">
+    <script src="./files/scale.fix.js.下载"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!--[if lt IE 9]>
@@ -55,6 +55,9 @@
   </li>
   <li>
     <p>Xinlei Wang, Min Tang, Dinesh Manocha, Ruofeng Tong, Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring, accepted by Eurographics 2018. <a href="https://min-tang.github.io/home/BVH-OR/">https://min-tang.github.io/home/BVH-OR/</a></p>
+  </li>
+  <li>
+    <p>Tongtong Wang, Min Tang, Zhendong Wang, and Roufeng Tong, Accurate Self-Collision Detection Using Enhanced Dual-Cone Method, accepted by Computers & Graphics, 2018. <a href="https://min-tang.github.io/home/BVH-OR/">https://min-tang.github.io/home/BVH-OR/</a></p>
   </li>
 </ul>
 
