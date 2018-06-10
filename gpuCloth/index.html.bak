@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+gpuCloth - API for high-quality cloth simulation with CUDA
+</title>
+
+<meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
+</head><body link="#95DDFF" bgcolor="#333333" text="#dddddd" vlink="#AAAAAA"><font face="verdana,sans-serif"><p:colorscheme colors="#666699,#ffffff,#3e3e5c,#ccff66,#60597b,#6666ff,#99ccff,#ffff99">
+<div style="mso-char-wrap: 1; mso-kinsoku-overflow: 1; tab-interval: .5625in" class="O" v:shape="_x0000_s1026"><font size="+4">gpuCloth - API for high-quality cloth simulation with CUDA</font></div>
+<h3>by <a href="https://min-tang.github.io/home/">Min Tang</a>
+</p><p align="center"><font face="verdana,sans-serif">&nbsp;</font>
+<img border="0" src="./files/teaser-all.jpg" width="1077" height="307"></p><p>
+<font face="verdana,sans-serif"><i><b>Benchmarks: </b></i>  
+Various cloth simulation scenes produced by gpuCloth, and rendered with 3ds Max. </font>
+<font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Introduction</b></font>
+</font></p><p><font face="verdana,sans-serif">
+gpuCloth is provided as a C++ API for high-quality cloth simulation. GPU (with CUDA) is used for acceleration. gpuCloth is mainly developed by Min Tang during his research on GPU-based cloth simulation. The API files including header files and lib/dll files for windows 64-bits platform. We also provide an example application to demonstrate how to use the API.
+<br>
+&nbsp;</font></p><h2><font face="verdana,sans-serif">Contents </font></h2><font face="verdana,sans-serif">
+</font></font><p>
+	
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="./files/gpuCloth-0.1-release.zip">API Package</a>&nbsp;(PDF 103 MB) 
+</font>
+<p>
+For password, write to tang_m@zju.edu.cn, with title "gpuCloth 0.1 password", please provide your name, affiliation, and purpose. 
+
+<h2>Related Links </h2> 
+<p><a href="../DCC/">Accurate Self-Collision Detection Using Enhanced Dual-Cone Method</a></p>
+<p><a href="../BVH-OR/">Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring</a></p>
+<p><a href="http://gamma.cs.unc.edu/CAMA/">CAMA: Contact-Aware Matrix Assembly with Unified Collision Handling for GPU-based Cloth Simulation</a> 
+</p><p><a href="http://gamma.cs.unc.edu/gcloth/">A GPU-based Streaming Algorithm for High-Resolution Cloth Simulation</a> 
+</p><p><a href="http://gamma.cs.unc.edu/DynamicB/">UNC dynamic model benchmark repository</a> 
+</p><p><a href="http://gamma.cs.unc.edu/CSTREAMS/">Collision-Streams: Fast GPU-based Collision Detection for Deformable Models
+</a>
+</p><p><a href="http://gamma.cs.unc.edu/DNF/">Fast Continuous Collision Detection using Deforming Non-Penetration 
+	Filters</a>
+</p><p><a href="http://gamma.cs.unc.edu/CBC/">Interactive Continuous Collision 
+Detection between Deformable Models using Connectivity-Based Culling</a>
+</p><p><a href="http://gamma.cs.unc.edu/PCD/">MCCD: Multi-Core Collision Detection between 
+Deformable Models using Front-Based Decomposition</a>
+</p><p><a href="http://gamma.cs.unc.edu/RTRI/">Fast Collision Detection for 
+Deformable Models using Representative-Triangles</a>
+</p><p><a href="http://gamma.cs.unc.edu/DEFORMCD/">DeformCD: Collision Detection 
+between Deforming Objects</a>
+</p><p><a href="http://gamma.cs.unc.edu/SELFCD/">Self-CCD: Continuous Collision 
+Detection for Deforming Objects</a> 
+</p><p><a href="http://gamma.cs.unc.edu/CDCD/">Interactive Collision Detection 
+between Deformable Models using Chromatic Decomposition</a> 
+</p><p><a href="http://gamma.cs.unc.edu/DVD/">Fast Proximity Computation Among 
+Deformable Models using Discrete Voronoi Diagrams</a> 
+</p><p><a href="http://gamma.cs.unc.edu/CULLIDE/">CULLIDE: Interactive Collision 
+Detection between Complex Models using Graphics Hardware </a>
+</p><p><a href="http://gamma.cs.unc.edu/RCULLIDE/">RCULLIDE: Fast and Reliable 
+Collision Culling using Graphics Processors </a>
+</p><p><a href="http://gamma.cs.unc.edu/QCULLIDE/">Quick-CULLIDE: Efficient Inter- 
+and Intra-Object Collision Culling using Graphics Hardware</a> 
+</p><p><a href="http://gamma.cs.unc.edu/research/collision/">Collision Detection</a> 
+
+</p><p><a href="http://gamma.cs.unc.edu/">UNC GAMMA Group </a>
+</p><h2>Acknowledgements </h2>
+<p>
+This research is supported in part by the National Key R&D Program of China (2017YFB1002703), NSFC (61732015, 61572423, 61572424), the Science and Technology Project of Zhejiang Province (2018C01080), and Zhejiang Provincial NSFC (LZ16F020003). Dinesh Manocha is supported in part by the 1000 National Scholar Program of China and NSFC (61732015).
+</p>
+<p>&nbsp;</p>
+<p></p><p><br><a href="mailto:tang_m@zju.edu.cn">tang_m@zju.edu.cn</a> 
+</p><p></p></font>
+</font></p:colorscheme></font></body></html>
