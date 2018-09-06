@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
-I-Cloth: Incremental Collision Handling for GPU-Based InteractiveCloth Simulation
+I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation
 </title>
 
 <meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
 </head><body link="#95DDFF" bgcolor="#333333" text="#dddddd" vlink="#AAAAAA"><font face="verdana,sans-serif"><p:colorscheme colors="#666699,#ffffff,#3e3e5c,#ccff66,#60597b,#6666ff,#99ccff,#ffff99">
 <div style="mso-char-wrap: 1; mso-kinsoku-overflow: 1; tab-interval: .5625in" class="O" v:shape="_x0000_s1026"><font size="+4">
-I-Cloth: Incremental Collision Handling for GPU-Based InteractiveCloth Simulation
+I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation
 </font></div>
 <h3>by <a href="https://min-tang.github.io/home/">Min Tang</a><sup><font face="Verdana">1</font></sup>
 	<font face="verdana,sans-serif">, Tongtong Wang<sup><font face="Verdana">1</font></sup>
@@ -19,24 +19,25 @@ I-Cloth: Incremental Collision Handling for GPU-Based InteractiveCloth Simulatio
 China</font></i></p>
  <p><i><font size="4" face="Times New Roman">2 - University of Maryland at College Park, USA</font></i></p>
  <p align="center"><font face="verdana,sans-serif">&nbsp;</font>
-<img border="0" src="./files/i3d.png" width="996" height="235"></p><p>
+<img border="0" src="./files/papers_110s2-file2.jpg" width="1500" height="1500"></p><p>
 <font face="verdana,sans-serif"><i><b>Benchmarks: </b></i>  
-Our novel GPU-based collision detection algorithm is used to simulate clothes with regular (a-c) or irregular (d-f)
-shapes, which may correspond to a single layer (b, e) or multiple layers (a, c, d, f). We use a parallel spatial hashing algorithm to
-perform inter-object and intra-object collision checking on a GPU along with normal cone culling. The yellow line segments
-highlight all the areas that have no self-collisions and can be culled away. As compared to prior GPU-based collision detection
-algorithms, we observe 6−8X speedup. </font>
+Benchmarks: Our novel GPU-based collision handling algorithm is used to simulate complex
+cloth with irregular shape and multiple layers at 2−8fps on an NVIDIA GeForce GTX 1080.
+We observe 7−10X speedup over prior algorithms. </font>
 <font face="verdana,sans-serif">
 </font></p><p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Abstract</b></font>
 </font></p><p><font face="verdana,sans-serif">
-We present a GPU-based self-collision culling method (PSCC) based on a combination of normal cone culling and spatial hashing techniques.
-We first describe a normal cone test front (NCTF) based parallel algorithm that maps well to GPU architectures. We use sprouting and shrinking operators to maintain compact NCTFs.
-Moreover, we use the NCTF nodes to efficient build an enhanced spatial hashing for triangles meshes and use that for inter-object
-and intra-object collisions. Compared with conventional spatial hashing, our approach provides higher culling efficiency and reduces
-the cost of narrow phrase culling. As compared to prior GPU-based parallel collision detection algorithm, our approach
-demonstrates 6?8X speedup. We also present an efficient approach for GPU-based cloth simulation based on PSCC. In practice, our
-GPU-based cloth simulation takes about one second per frame on complex scenes with tens or hundreds of thousands of triangles, and
-is about 4-6X faster than prior GPU-based simulation algorithms.
+
+We present an incremental collision handling algorithm for GPU-based interactive cloth simulation.
+Our approach exploits the spatial and temporal coherence between successive iterations of an
+optimization-based solver for collision response computation. We present an incremental continuous
+collision detection algorithm that keeps track of deforming vertices and combine it  with spatial hashing.
+We use a non-linear GPU-based impact zone solver to resolve the penetrations. We combine our collision
+handling algorithm with implicit integration to use large time steps. Our overall algorithm, I-Cloth,
+can simulate complex cloth deformation with a few hundred thousand vertices at 2-8 frames per second 
+on a commodity GPU. We highlight its performance on different benchmarks and observe up to
+7-10X speedup over prior algorithms.
+
 <br>
 &nbsp;</font></p><h2><font face="verdana,sans-serif">Contents </font></h2><font face="verdana,sans-serif">
 </font></font><p>
