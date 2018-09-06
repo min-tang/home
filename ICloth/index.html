@@ -1,1 +1,108 @@
-xxx
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+I-Cloth: Incremental Collision Handling for GPU-Based InteractiveCloth Simulation
+</title>
+
+<meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
+</head><body link="#95DDFF" bgcolor="#333333" text="#dddddd" vlink="#AAAAAA"><font face="verdana,sans-serif"><p:colorscheme colors="#666699,#ffffff,#3e3e5c,#ccff66,#60597b,#6666ff,#99ccff,#ffff99">
+<div style="mso-char-wrap: 1; mso-kinsoku-overflow: 1; tab-interval: .5625in" class="O" v:shape="_x0000_s1026"><font size="+4">
+I-Cloth: Incremental Collision Handling for GPU-Based InteractiveCloth Simulation
+</font></div>
+<h3>by <a href="https://min-tang.github.io/home/">Min Tang</a><sup><font face="Verdana">1</font></sup>
+	<font face="verdana,sans-serif">, Tongtong Wang<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, Zhongyuan Liu<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, Ruofeng Tong<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, and <a href="http://www.cs.unc.edu/~dm/">Dinesh Manocha</a><sup><font face="Verdana">2</font></sup>
+  <font face="verdana,sans-serif"></font></font></font></font></font></h3><font face="verdana,sans-serif"><font face="verdana,sans-serif"><font size="4" face="Times New Roman">
+</font>
+ <p><font size="4" face="Times New Roman"></font><i><font size="4" face="Times New Roman">1 - Zhejiang University, 
+China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">2 - University of Maryland at College Park, USA</font></i></p>
+ <p align="center"><font face="verdana,sans-serif">&nbsp;</font>
+<img border="0" src="./files/i3d.png" width="996" height="235"></p><p>
+<font face="verdana,sans-serif"><i><b>Benchmarks: </b></i>  
+Our novel GPU-based collision detection algorithm is used to simulate clothes with regular (a-c) or irregular (d-f)
+shapes, which may correspond to a single layer (b, e) or multiple layers (a, c, d, f). We use a parallel spatial hashing algorithm to
+perform inter-object and intra-object collision checking on a GPU along with normal cone culling. The yellow line segments
+highlight all the areas that have no self-collisions and can be culled away. As compared to prior GPU-based collision detection
+algorithms, we observe 6−8X speedup. </font>
+<font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Abstract</b></font>
+</font></p><p><font face="verdana,sans-serif">
+We present a GPU-based self-collision culling method (PSCC) based on a combination of normal cone culling and spatial hashing techniques.
+We first describe a normal cone test front (NCTF) based parallel algorithm that maps well to GPU architectures. We use sprouting and shrinking operators to maintain compact NCTFs.
+Moreover, we use the NCTF nodes to efficient build an enhanced spatial hashing for triangles meshes and use that for inter-object
+and intra-object collisions. Compared with conventional spatial hashing, our approach provides higher culling efficiency and reduces
+the cost of narrow phrase culling. As compared to prior GPU-based parallel collision detection algorithm, our approach
+demonstrates 6?8X speedup. We also present an efficient approach for GPU-based cloth simulation based on PSCC. In practice, our
+GPU-based cloth simulation takes about one second per frame on complex scenes with tens or hundreds of thousands of triangles, and
+is about 4-6X faster than prior GPU-based simulation algorithms.
+<br>
+&nbsp;</font></p><h2><font face="verdana,sans-serif">Contents </font></h2><font face="verdana,sans-serif">
+</font></font><p>
+	
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="./files/pscc.pdf">Paper </a>&nbsp;(PDF 2.21 MB) 
+</font>
+	<p></p>
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="./files/i3d18-slides.pdf">I3D 2018 Slides</a>&nbsp;(PDF 969 KB) 
+</font>
+	<p></p>
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="../gpuCloth/">Source Code</a>&nbsp;
+</font>
+
+</font><font face="verdana,sans-serif"> 
+</font></font><font face="Verdana" color="#ffffff"></font></p><p><font face="Verdana" color="#ffffff">Min Tang, Zhongyuan Liu, Roufeng Tong, and Dinesh Manocha, PSCC: Parallel Self-Collision Culling with Spatial Hashing on GPUs, Proceedings of the ACM on Computer Graphics and Interactive Techniques, 1(1), 18:1-18, 2018.</font><font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif">&nbsp;&nbsp;&nbsp;@article{pscc18,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author = {Tang, Min and Liu, Zhongyuan and Tong, Ruofeng and Manocha, Dinesh},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = {{PSCC}: Parallel Self-Collision Culling with Spatial Hashing on {GPUs}},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal = {Proceedings of the ACM on Computer Graphics and Interactive Techniques},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volume = {1},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number = {1},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pages = {18:1--18},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year = {2018},
+<br>&nbsp;&nbsp;}
+</font></p><p><font face="verdana,sans-serif"><a href="./files/i3d18.wmv">Video</a> <font color="#ffffff" face="Verdana">(22.9 MB) </font></font><font face="verdana,sans-serif">
+</font></p><h2><font face="verdana,sans-serif">&nbsp;</font></h2><font face="verdana,sans-serif">
+<h2>Related Links </h2> 
+<p><a href="../gpuCloth/">I-Cloth: API for fast and reliable cloth simulation with CUDA</a></p>
+<p><a href="../PSCC/">PSCC: Parallel Self-Collision Culling with Spatial Hashing on GPUs</a></p> 
+<p><a href="../DCC/">Accurate Self-Collision Detection Using Enhanced Dual-Cone Method</a></p>
+<p><a href="../BVH-OR/">Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring</a></p>
+<p><a href="../CAMA/">CAMA: Contact-Aware Matrix Assembly with Unified Collision Handling for GPU-based Cloth Simulation</a> 
+</p><p><a href="http://gamma.cs.unc.edu/gcloth/">A GPU-based Streaming Algorithm for High-Resolution Cloth Simulation</a> 
+</p><p><a href="http://gamma.cs.unc.edu/DynamicB/">UNC dynamic model benchmark repository</a> 
+</p><p><a href="http://gamma.cs.unc.edu/CSTREAMS/">Collision-Streams: Fast GPU-based Collision Detection for Deformable Models
+</a>
+</p><p><a href="http://gamma.cs.unc.edu/DNF/">Fast Continuous Collision Detection using Deforming Non-Penetration 
+	Filters</a>
+</p><p><a href="http://gamma.cs.unc.edu/CBC/">Interactive Continuous Collision 
+Detection between Deformable Models using Connectivity-Based Culling</a>
+</p><p><a href="http://gamma.cs.unc.edu/PCD/">MCCD: Multi-Core Collision Detection between 
+Deformable Models using Front-Based Decomposition</a>
+</p><p><a href="http://gamma.cs.unc.edu/RTRI/">Fast Collision Detection for 
+Deformable Models using Representative-Triangles</a>
+</p><p><a href="http://gamma.cs.unc.edu/DEFORMCD/">DeformCD: Collision Detection 
+between Deforming Objects</a>
+</p><p><a href="http://gamma.cs.unc.edu/SELFCD/">Self-CCD: Continuous Collision 
+Detection for Deforming Objects</a> 
+</p><p><a href="http://gamma.cs.unc.edu/CDCD/">Interactive Collision Detection 
+between Deformable Models using Chromatic Decomposition</a> 
+</p><p><a href="http://gamma.cs.unc.edu/DVD/">Fast Proximity Computation Among 
+Deformable Models using Discrete Voronoi Diagrams</a> 
+</p><p><a href="http://gamma.cs.unc.edu/CULLIDE/">CULLIDE: Interactive Collision 
+Detection between Complex Models using Graphics Hardware </a>
+</p><p><a href="http://gamma.cs.unc.edu/RCULLIDE/">RCULLIDE: Fast and Reliable 
+Collision Culling using Graphics Processors </a>
+</p><p><a href="http://gamma.cs.unc.edu/QCULLIDE/">Quick-CULLIDE: Efficient Inter- 
+and Intra-Object Collision Culling using Graphics Hardware</a> 
+</p><p><a href="http://gamma.cs.unc.edu/research/collision/">Collision Detection</a> 
+
+</p><p><a href="http://gamma.cs.unc.edu/">UNC GAMMA Group </a>
+</p><h2>Acknowledgements </h2>
+<p>
+This research is supported in part by the National Key R&D Program of China (2017YFB1002703), NSFC (61732015, 61572423, 61572424), the Science and Technology Project of Zhejiang Province (2018C01080), and Zhejiang Provincial NSFC (LZ16F020003). Dinesh Manocha is supported in part by the 1000 National Scholar Program of China and NSFC (61732015).
+</p>
+<p>&nbsp;</p>
+<p></p><p><br><a href="mailto:tang_m@zju.edu.cn">tang_m@zju.edu.cn</a> 
+</p><p></p></font>
+</font></p:colorscheme></font></body></html>
