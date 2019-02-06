@@ -11,6 +11,7 @@ Served as Board of Reviewers member of WSCG 2012, WSCG 2013, WSCG 2014,
     Program Committee member of I3D 2013, I3D 2014, I3D 2105, I3D 2016, 
     Program Committee member of Eurographics 2016,
     International Program Committee member of EGSR 2017, EGSR 2018, EGSR 2019, CAD/Graphics 2019,
+    Program Committee member of SCA 2019,
     Local Organizing Chair of CVM 2013. 
 
 ## Contact Information
