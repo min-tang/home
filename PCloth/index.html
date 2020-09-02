@@ -1,24 +1,29 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
-I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation
+P-Cloth: Interactive Complex Cloth Simulation on Multi-GPU Systems
+using Dynamic Matrix Assembly and Pipelined Implicit Integrators
 </title>
 
 <meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
 </head><body link="#95DDFF" bgcolor="#333333" text="#dddddd" vlink="#AAAAAA"><font face="verdana,sans-serif"><p:colorscheme colors="#666699,#ffffff,#3e3e5c,#ccff66,#60597b,#6666ff,#99ccff,#ffff99">
 <div style="mso-char-wrap: 1; mso-kinsoku-overflow: 1; tab-interval: .5625in" class="O" v:shape="_x0000_s1026"><font size="+4">
-I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation
+P-Cloth: Interactive Complex Cloth Simulation on Multi-GPU Systems
+using Dynamic Matrix Assembly and Pipelined Implicit Integrators
 </font></div>
-<h3>by <a href="https://min-tang.github.io/home/">Min Tang</a><sup><font face="Verdana">1</font></sup>
-	<font face="verdana,sans-serif">, Tongtong Wang<sup><font face="Verdana">1</font></sup>
-  <font face="verdana,sans-serif">, Zhongyuan Liu<sup><font face="Verdana">1</font></sup>
+<h3>by 
+<font face="verdana,sans-serif">Cheng Li<sup><font face="Verdana">1</font></sup>
+, <a href="https://min-tang.github.io/home/">Min Tang</a><sup><font face="Verdana">1</font></sup>
   <font face="verdana,sans-serif">, Ruofeng Tong<sup><font face="Verdana">1</font></sup>
-  <font face="verdana,sans-serif">, and <a href="http://www.cs.unc.edu/~dm/">Dinesh Manocha</a><sup><font face="Verdana">2</font></sup>
+  <font face="verdana,sans-serif">, Ming Cai<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, Jieyi Zhao<sup><font face="Verdana">3</font></sup>
+ <font face="verdana,sans-serif">and <a href="http://www.cs.umd.edu/~dm/">Dinesh Manocha</a><sup><font face="Verdana">2</font></sup>
   <font face="verdana,sans-serif"></font></font></font></font></font></h3><font face="verdana,sans-serif"><font face="verdana,sans-serif"><font size="4" face="Times New Roman">
 </font>
  <p><font size="4" face="Times New Roman"></font><i><font size="4" face="Times New Roman">1 - Zhejiang University, 
 China</font></i></p>
  <p><i><font size="4" face="Times New Roman">2 - University of Maryland at College Park, USA</font></i></p>
- <p align="center"><font face="verdana,sans-serif">&nbsp;</font>
+ <p><i><font size="4" face="Times New Roman">3 - University of Texas Health Science Center at Houston, USA</font></i></p>
+<p align="center"><font face="verdana,sans-serif">&nbsp;</font>
 <img border="0" src="../gpuCloth/files/teaser-rect.jpg" width="767" height="750"></p><p>
 <font face="verdana,sans-serif"><i><b>Benchmarks: </b></i>  
 Benchmarks: Our novel GPU-based collision handling algorithm is used to simulate complex
@@ -28,21 +33,29 @@ We observe 7−10X speedup over prior algorithms. </font>
 </font></p><p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Abstract</b></font>
 </font></p><p><font face="verdana,sans-serif">
 
-We present an incremental collision handling algorithm for GPU-based interactive cloth simulation.
-Our approach exploits the spatial and temporal coherence between successive iterations of an
-optimization-based solver for collision response computation. We present an incremental continuous
-collision detection algorithm that keeps track of deforming vertices and combine it  with spatial hashing.
-We use a non-linear GPU-based impact zone solver to resolve the penetrations. We combine our collision
-handling algorithm with implicit integration to use large time steps. Our overall algorithm, I-Cloth,
-can simulate complex cloth deformation with a few hundred thousand vertices at 2-8 frames per second 
-on a commodity GPU. We highlight its performance on different benchmarks and observe up to
-7-10X speedup over prior algorithms.
+We present a novel parallel algorithm for cloth simulation that exploits multiple
+GPUs for fast computation and the handling of very high resolution
+meshes. To accelerate implicit integration, we describe new parallel algorithms
+for sparse matrix-vector multiplication (SpMV) and for dynamic matrix
+assembly on a multi-GPU workstation. Our algorithms use a novel work
+queue generation scheme for a fat-tree GPU interconnect topology. Furthermore,
+we present a novel collision handling scheme that uses spatial hashing
+for discrete and continuous collision detection along with a non-linear
+impact zone solver. Our parallel schemes can distribute the computation
+and storage overhead among multiple GPUs and enable us to perform almost
+interactive simulation on complex cloth meshes, which can hardly be
+handled on a single GPU due to memory limitations. We have evaluated
+the performance with two multi-GPU workstations (with 4 and 8 GPUs, respectively)
+on cloth meshes with 0.5-1.65M triangles. Our approach can
+reliably handle the collisions and generate vivid wrinkles and folds at 2-5
+fps, which is significantly faster than prior cloth simulation systems. We
+observe almost linear speedups with respect to the number of GPUs.
 
 <br>
 &nbsp;</font></p><h2><font face="verdana,sans-serif">Contents </font></h2><font face="verdana,sans-serif">
 </font></font><p>
 	
-<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="./files/icloth.pdf">Paper </a>&nbsp;(PDF 3.01 MB) 
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="./files/pcloth.pdf">Paper </a>&nbsp;(PDF 3.01 MB) 
 </font>
 	<p></p>
 <font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="./files/supplementary.pdf">Supplemetary Material</a>&nbsp;(PDF 2.87 MB) 
@@ -50,26 +63,23 @@ on a commodity GPU. We highlight its performance on different benchmarks and obs
 <font face="verdana,sans-serif"><a href="./files/icloth-lowres.mp4">Video</a> <font color="#ffffff" face="Verdana">(43.2 MB) </font></font><font face="verdana,sans-serif">
 </font>
 	<p></p>
-<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="../gpuCloth/">Source Code</a>&nbsp;
-</font>
 
 </font><font face="verdana,sans-serif"> 
 </font></font><font face="Verdana" color="#ffffff"></font></p><p><font face="Verdana" color="#ffffff">
-Min Tang, Tongtong Wang, Zhongyuan Liu, Ruofeng Tong, and Dinesh Manocha, I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation, ACM Transactions on Graphics, 37(6), Article 204 (November 2018), 10 pages (Proc. of ACM SIGGRAPH Asia), 2018.
-</font><font face="verdana,sans-serif">
-</font></p><p><font face="verdana,sans-serif">&nbsp;&nbsp;&nbsp;@article{siga18,
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author = {Tang, Min and Wang, Tongtong and Liu, Zhongyuan and Tong, Ruofeng and Manocha, Dinesh},
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = {{I-Cloth}: Incremental Collision Handling for {GPU}-Based Interactive Cloth Simulation},
+Cheng Li, Min Tang, Ruofeng Tong, Ming Cai, Jieyi Zhao, Dinesh Manocha, P-Cloth: Interactive Cloth Simulation on Multi-GPU Systems using Dynamic Matrix Assembly and Pipelined Implicit Integrators, SIGGRAPH Asia, Accepted, 2020.</font><font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif">&nbsp;&nbsp;&nbsp;@article{pcloth20,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author = {Li, Cheng and Tang, Min and Tong, Ruofeng and Cai, Ming and Zhao, Jieyi and Manocha, Dinesh},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = {{P-Cloth}: Interactive Cloth Simulation on Multi-{GPU} Systems using Dynamic Matrix Assembly and Pipelined Implicit Integrators},
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal = {ACM Transaction on Graphics (Proceedings of SIGGRAPH Asia)},
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volume = {37},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volume = {39},
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number = {6},
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pages = {204:1--10},
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;month = {November},
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year = {2018},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year = {2020},
 <br>&nbsp;&nbsp;}
 </font></p><h2><font face="verdana,sans-serif">&nbsp;</font></h2><font face="verdana,sans-serif">
 <h2>Related Links</h2> 
 
+<p><a href="../PCloth/">P-Cloth: Interactive Cloth Simulation on Multi-GPU Systems using Dynamic Matrix Assembly and Pipelined Implicit Integrators</a></p>
 <p><a href="../ICloth/">I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation</a></p>
 <p><a href="../PSCC/">PSCC: Parallel Self-Collision Culling with Spatial Hashing on GPUs</a></p>
 <p><a href="../gpuCloth/">I-Cloth: API for fast and reliable cloth simulation with CUDA</a></p>
@@ -96,10 +106,16 @@ Min Tang, Tongtong Wang, Zhongyuan Liu, Ruofeng Tong, and Dinesh Manocha, I-Clot
 	
 <h2>Acknowledgements</h2>
 <p>
-This research is supported in part by NSFC (61732015, 61572423, 61572424, 61832016), the National Key R&D Program of China
-(2017YFB1002703), the Science and Technology Project of Zhejiang Province (2018C01080), and Zhejiang Provincial NSFC (LZ16F020003).
-Dinesh Manocha is supported in part by NSF Grant 1547106 and Intel. We would like to thank Xiaorui Chen for helping on the benchmarks,
-and the reviewers’ constructive feedback and suggestions.
+
+This work is supported in part by the National Key R&D Program
+of China under Grant No.: 2017YFB1002703, and the National Natural
+Science Foundation of China under Grant No.: 61972341, Grant
+No.: 61832016, Grant No.: 51775496, and Grant No.: 61732015. We
+would like to thank Zhiyu Zhang and Xiaorui Chen for helping on
+the benchmarks, Momo Inc. for the Benchmark Kimono, Zhijiang
+Lab for the 8-GPU workstation, and the anonymous referees for
+their valuable comments and helpful suggestions.
+
 </p>
 <p>&nbsp;</p>
 <p></p><p><br><a href="mailto:tang_m@zju.edu.cn">tang_m@zju.edu.cn</a> 
