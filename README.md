@@ -13,7 +13,7 @@ Served as
     Program Committee member of I3D 2013, I3D 2014, I3D 2105, I3D 2016, 
     Program Committee member of Eurographics 2016,
     International Program Committee member of EGSR 2017, EGSR 2018, EGSR 2019, 
-    Program Committee member of China CAD/Graphics 2021, China GDC 2019 - CAD&CG 2019,  China CAD&CG 2018-GDC 2018, China CAD&CG 2017
+    Program Committee member of China CAD/Graphics 2021, China GDC 2019 - CAD&CG 2019,  China CAD&CG 2018-GDC 2018, China CAD&CG 2017,
     Program Committee member of SCA 2019,
     Board of Reviewers member of WSCG 2012, WSCG 2013, WSCG 2014, 
     Local Organizing Chair of CVM 2013. 
