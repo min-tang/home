@@ -9,7 +9,7 @@ Min Tang is a professor of the college of computer science and technology, Zheji
 
 
 
-He has served as a reviewer for many international conference (SIGGRAPH, SIGGRPAH Asia, I3D, HPG, WSCG, etc.) and journals (ACM Transaction on Graphics, IEEE Transactions on Visualization and Computer Graphics, IEEE Transactions on Haptics, The Visual Computer, etc.)
+He has served as a reviewer for many international conference (SIGGRAPH, SIGGRPAH Asia, I3D, HPG, WSCG, ICRA, AAAI, etc.) and journals (ACM Transaction on Graphics, IEEE Transactions on Visualization and Computer Graphics, IEEE Transactions on Haptics, The Visual Computer, etc.)
 
 
 
