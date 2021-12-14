@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+N-Cloth: Predicting 3D Cloth Deformation with Mesh-Based Networks
+</title>
+
+<meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
+</head><body link="#95DDFF" bgcolor="#333333" text="#dddddd" vlink="#AAAAAA"><font face="verdana,sans-serif"><p:colorscheme colors="#666699,#ffffff,#3e3e5c,#ccff66,#60597b,#6666ff,#99ccff,#ffff99">
+<div style="mso-char-wrap: 1; mso-kinsoku-overflow: 1; tab-interval: .5625in" class="O" v:shape="_x0000_s1026"><font size="+4">
+N-Cloth: Predicting 3D Cloth Deformation with Mesh-Based Networks
+</font></div>
+<h3>by 
+<font face="verdana,sans-serif">Yudi Li<sup><font face="Verdana">1</font></sup>,
+ <a href="https://min-tang.github.io/home/">Min Tang</a><sup><font face="Verdana">1</font></sup>,
+<font face="verdana,sans-serif">Yun Yang<sup><font face="Verdana">1</font></sup>,
+<font face="verdana,sans-serif">Zi Huang<sup><font face="Verdana">1</font></sup>,
+<font face="verdana,sans-serif">Ruofeng Tong<sup><font face="Verdana">1</font></sup>,
+<font face="verdana,sans-serif">Shuangcai Yang<sup><font face="Verdana">3</font></sup>,
+<font face="verdana,sans-serif">Yao Li<sup><font face="Verdana">3</font></sup>,
+ <font face="verdana,sans-serif">and <a href="http://www.cs.umd.edu/~dm/">Dinesh Manocha</a><sup><font face="Verdana">2</font></sup>
+  <font face="verdana,sans-serif"></font></font></font></font></font></h3><font face="verdana,sans-serif"><font face="verdana,sans-serif"><font size="4" face="Times New Roman">
+</font>
+ <p><font size="4" face="Times New Roman"></font><i><font size="4" face="Times New Roman">1 - Zhejiang University, 
+China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">2 - University of Maryland at College Park, USA</font></i></p>
+ <p><i><font size="4" face="Times New Roman">3 - Tencent</font></i></p>
+<img border="0" src="./files/ncloth.jpg" width="1273" height="353"></p><p>
+<font face="verdana,sans-serif"><i><b>Results: </b></i>  
+Given the initial template of the cloth mesh and the target obstacle mesh, our network can predicate a plausible target 3D cloth mesh for general
+scenes. We highlight (a) the final cloth mesh wrapped around a bunny; (b) the draping jacket on a non-SMPL human body; (c) the t-shirt deformation on a
+SMPL human body; (d) a human dressed in a robe represented by 100K triangles. All predicted meshes are different from the datasets used for training. Our
+approach runs at 30 − 45fps on an NVIDIA GeForce RTX 3090 GPU.
+</font>
+<font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Abstract</b></font>
+</font></p><p><font face="verdana,sans-serif">
+We present a novel mesh-based learning approach (N-Cloth) for plausible 3D cloth deformation prediction. Our approach is general and can handle cloth or obstacles represented by triangle meshes with arbitrary topology. We use graph convolution to transform the cloth and object meshes into a latent space to reduce the non-linearity in the mesh space. Our network can predict the target 3D cloth mesh deformation based on the state of the initial cloth mesh template and the target obstacle mesh. Our approach can handle complex cloth meshes with up to 100K triangles and scenes with various objects corresponding to SMPL humans, Non-SMPL humans, or rigid bodies. In practice, our approach demonstrates good temporal coherence between successive input frames and can be used to generate plausible cloth simulation at 30−45 fps on an NVIDIA GeForce RTX 3090 GPU. We highlight its benefits over prior learning-based methods and physically-based cloth simulators.
+
+
+<br>
+&nbsp;</font></p><h2><font face="verdana,sans-serif">Contents </font></h2><font face="verdana,sans-serif">
+</font></font><p>
+	
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="https://arxiv.org/pdf/2112.06397">Paper </a>&nbsp;(PDF 11.6 MB) 
+</font>
+<font face="verdana,sans-serif"> 
+</font></font><font face="Verdana" color="#ffffff"></font></p><p><font face="Verdana" color="#ffffff">
+Yudi Li, Min Tang, Yun Yang, Zi Huang, Ruofeng Tong, Shuangcai Yang, Yao Li, Dinesh Manocha, N-Cloth: Predicting 3D Cloth Deformation with Mesh-Based Networks, conditionally accepted by Eurographics 2022.
+</font><font face="verdana,sans-serif">
+
+<h2> Dataset </h2>
+
+<p><a href="http://give.zju.edu.cn/research/pcloth-data/bunny/mesh.zip">Bunny</a></p>
+
+
+<h2>Related Links</h2> 
+
+<p><a href="../PCloth/">P-Cloth: Interactive Cloth Simulation on Multi-GPU Systems using Dynamic Matrix Assembly and Pipelined Implicit Integrators</a></p>
+<p><a href="../ICloth/">I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation</a></p>
+<p><a href="../PSCC/">PSCC: Parallel Self-Collision Culling with Spatial Hashing on GPUs</a></p>
+<p><a href="../gpuCloth/">I-Cloth: API for fast and reliable cloth simulation with CUDA</a></p>
+<p><a href="../BVH-OR/">Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring</a></p>
+<p><a href="http://gamma.cs.unc.edu/PCD/">MCCD: Multi-Core Collision Detection between Deformable Models using Front-Based Decomposition</a></p>
+<p><a href="http://gamma.cs.unc.edu/CBC/">Interactive Continuous Collision Detection between Deformable Models using Connectivity-Based Culling</a></p>
+<p><a href="http://gamma.cs.unc.edu/BSC/index.htm#TightCCD">TightCCD: Efficient and Robust Continuous Collision Detection using Tight Error Bounds</a></p>
+<p><a href="http://gamma.cs.unc.edu/BSC/">Fast and Exact Continuous Collision Detection with Bernstein Sign Classification</a></p>
+<p><a href="http://gamma.cs.unc.edu/gcloth/">A GPU-based Streaming Algorithm for High-Resolution Cloth Simulation</a></p>
+<p><a href="http://gamma.cs.unc.edu/CPF/">Continuous Penalty Forces</a></p>
+<p><a href="http://gamma.cs.unc.edu/DynamicB/">UNC dynamic model benchmark repository</a></p>
+<p><a href="http://gamma.cs.unc.edu/CSTREAMS/">Collision-Streams: Fast GPU-based Collision Detection for Deformable Models</a></p>
+<p><a href="http://gamma.cs.unc.edu/DNF/">Fast Continuous Collision Detection using Deforming Non-Penetration Filters</a></p>
+<p><a href="http://gamma.cs.unc.edu/RTRI/">Fast Collision Detection for Deformable Models using Representative-Triangles</a></p>
+<p><a href="http://gamma.cs.unc.edu/DEFORMCD/">DeformCD: Collision Detection between Deforming Objects</a></p>
+<p><a href="http://gamma.cs.unc.edu/SELFCD/">Self-CCD: Continuous Collision Detection for Deforming Objects</a></p>
+<p><a href="http://gamma.cs.unc.edu/CDCD/">Interactive Collision Detection between Deformable Models using Chromatic Decomposition</a></p>
+<p><a href="http://gamma.cs.unc.edu/DVD/">Fast Proximity Computation Among Deformable Models using Discrete Voronoi Diagrams</a></p>
+<p><a href="http://gamma.cs.unc.edu/CULLIDE/">CULLIDE: Interactive Collision Detection between Complex Models using Graphics Hardware </a></p>
+<p><a href="http://gamma.cs.unc.edu/RCULLIDE/">RCULLIDE: Fast and Reliable Collision Culling using Graphics Processors </a></p>
+<p><a href="http://gamma.cs.unc.edu/QCULLIDE/">Quick-CULLIDE: Efficient Inter- and Intra-Object Collision Culling using Graphics Hardware</a></p>
+<p><a href="http://gamma.cs.unc.edu/research/collision/">Collision Detection</a></p>
+<p><a href="http://gamma.cs.unc.edu/">UNC GAMMA Group </a></p>
+	
+<h2>Acknowledgements</h2>
+<p>
+
+This work is supported in part by the National Key R&D Program
+of China under Grant No.: 2018AAA0102703, the National Natural
+Science Foundation of China under Grant No.: 61972341, Grant
+No.: 61832016, Grant No.: 51775496, and Grant No.: 61732015, and
+the Tencent-Zhejiang University joint laboratory.
+
+</p>
+<p>&nbsp;</p>
+<p></p><p><br><a href="mailto:tang_m@zju.edu.cn">tang_m@zju.edu.cn</a> 
+</p><p></p></font>
+</font></p:colorscheme></font></body></html>
