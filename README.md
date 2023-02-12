@@ -27,9 +27,7 @@ and served as:
 
 
 
-## Contact Information
-
-[Link](Data/contact.html)
+## [Contact Information](Data/contact.html)
 
 ## Education and Work Experience
 
