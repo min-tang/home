@@ -29,14 +29,8 @@ and served as:
 
 ## [Contact Information](Data/contact.html)
 
-## Education and Work Experience
+## [Education and Work Experience](Data/work.html)
 
-[Link](Data/work.html)
+## [Recent Research](Data/projects.html)
 
-## Recent Research
-
-[Link](Data/projects.html)
-
-## Recent Publications
-
-[Link](Data/papers.html)
+## [Recent Publications](Data/papers.html)
