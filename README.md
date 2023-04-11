@@ -12,6 +12,7 @@ Min Tang is a professor of the college of computer science and technology, Zheji
 He has served as a reviewer for many international conference (SIGGRAPH, SIGGRPAH Asia, I3D, HPG, WSCG, ICRA, AAAI, etc.) and journals (ACM Transaction on Graphics, IEEE Transactions on Visualization and Computer Graphics, IEEE Transactions on Haptics, The Visual Computer, etc.)
 
 and served as:
+    Technical Paper Committee Member of SIGGRAPH Asia 2023,
     Program Committee Member of CGI 2023,
     Program Committee Member of CASA 2022,  AniNex 2023 Workshop at CASA 2023,
     Program Committee Member of AAAI-2021,
