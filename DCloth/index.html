@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+D-Cloth: Skinning-based Cloth Dynamic Prediction with a Three-stage Network
+</title>
+
+<meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
+</head><body link="#95DDFF" bgcolor="#333333" text="#dddddd" vlink="#AAAAAA"><font face="verdana,sans-serif"><p:colorscheme colors="#666699,#ffffff,#3e3e5c,#ccff66,#60597b,#6666ff,#99ccff,#ffff99">
+<div style="mso-char-wrap: 1; mso-kinsoku-overflow: 1; tab-interval: .5625in" class="O" v:shape="_x0000_s1026"><font size="+4">
+D-Cloth: Skinning-based Cloth Dynamic Prediction with a Three-stage Network
+</font></div>
+<h3>by 
+<font face="verdana,sans-serif">Yudi Li<sup><font face="Verdana">1</font></sup>,
+ <a href="https://min-tang.github.io/home/">Min Tang</a><sup><font face="Verdana">1</font></sup>,
+<font face="verdana,sans-serif">Yun Yang<sup><font face="Verdana">1</font></sup>,
+<font face="verdana,sans-serif">Ruofeng Tong<sup><font face="Verdana">1</font></sup>,
+<font face="verdana,sans-serif">Bailin An<sup><font face="Verdana">2</font></sup>,
+<font face="verdana,sans-serif">Shuangcai Yang<sup><font face="Verdana">2</font></sup>,
+<font face="verdana,sans-serif">Yao Li<sup><font face="Verdana">2</font></sup>,
+<font face="verdana,sans-serif">and Qilong Kou<sup><font face="Verdana">2</font></sup>
+ <font face="verdana,sans-serif"></font></font></font></font></font></h3><font face="verdana,sans-serif"><font face="verdana,sans-serif"><font size="4" face="Times New Roman">
+</font>
+ <p><font size="4" face="Times New Roman"></font><i><font size="4" face="Times New Roman">1 - Zhejiang University</font></i></p>
+ <p><i><font size="4" face="Times New Roman">2 - Tencent</font></i></p>
+<img border="0" src="./files/CSTN.jpg" width="1045" height="597"></p><p>
+<font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Abstract</b></font>
+</font></p><p><font face="verdana,sans-serif">
+We propose a  three-stage network that utilizes a skinning-based model to accurately predict dynamic cloth deformation. Our approach
+ decomposes cloth deformation into three distinct components: static, coarse dynamic, and wrinkle dynamic components. To capture 
+these components, we train our three-stage network accordingly. In the first stage, the static component is predicted by constructing a 
+static skinning model that incorporates learned joint increments and skinning weight increments. Then, in the second stage, the coarse
+ dynamic component is added to the static skinning model by incorporating serialized skeleton information. Finally, in the third stage, the
+ mesh sequence stage refines the prediction by incorporating the wrinkle dynamic component using serialized mesh information.
+We have implemented our network and used it in a Unity game scene, enabling real-time prediction of cloth dynamics. Our
+ implementation achieves impressive prediction speeds of approximately 3.6ms using an NVIDIA GeForce RTX 3090 GPU and 9.6ms on on
+ an Intel i7-7700 CPU. Compared to SOTA methods, our network excels in accurately capturing fine dynamic cloth deformations.
+<br>
+
+</font></p><p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Results</b></font>
+</font></p><p><font face="verdana,sans-serif">
+To evaluate that our network can process more complex and different characters, we applied our network on non-human characters
+ such as a monster, a dolphin, and a cat. The monster character has a skeleton similar to the human character, while the dolphin and
+ the cat have different skeletons. The dolphin character has no leg joints, while the cat model has four legs without hands. We can
+ also simulate the cloth deformation on these characters. The monster character wears a loose robe, and the dolphin and the cat wear
+ tight-fitting clothes designed for these characters.
+
+
+
+&nbsp;</font></p>
+
+<img border="0" src="./files/0.jpg" width="864" height="415"></p><p>
+<img border="0" src="./files/1.jpg" width="1060" height="597"></p><p>
+
+<h2><font face="verdana,sans-serif">Contents </font></h2><font face="verdana,sans-serif">
+</font></font><p>
+
+
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana"><a href="./files/CVMJ.pdf">Paper </a>&nbsp;(PDF 12.1 MB) 
+</font>
+<p>
+<font face="verdana,sans-serif"><a href="./files/CTSN.mp4">Video</a> <font color="#ffffff" face="Verdana">(30.9 MB) </font></font>also at <a href="https://www.youtube.com/embed/41yzneqq-oE">Youtube</a><font face="verdana,sans-serif">
+</font>
+<p>
+<p></p>
+<br>
+<font face="verdana,sans-serif"> 
+</font></font><font face="Verdana" color="#ffffff"></font></p><p><font face="Verdana" color="#ffffff">
+Yudi Li, Min Tang, Yun Yang, Ruofeng Tong, Bailin An, Shuangcai Yang, Yao Li, Qilong Kou, D-Cloth: Skinning-based Cloth Dynamic Prediction with a Three-stage Network,
+conditionally accepted by Pacific Graphics, 2023.
+</font>
+
+<p>
+<font face="verdana,sans-serif">
+&nbsp;&nbsp;&nbsp;@article{ncloth22,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author = {Li, Yudi and Tang, Min and Yang, Yun and Tong, Ruofeng and An, Bailin and Yang, Shuangcai and Li, Yao and Kou, Qilong},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = {{D-Cloth}: Skinning-based Cloth Dynamic Prediction with a Three-stage Network},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal = {Proceedings of Pacific Graphics 2023)},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year = {2023},
+<br>&nbsp;&nbsp;}
+</font></p><h2><font face="verdana,sans-serif">&nbsp;</font></h2><font face="verdana,sans-serif">
+
+<h2>Related Links</h2> 
+
+<p><a href="../CTSN/index.html">CTSN: Predicting Cloth Deformation for Skeleton-based Characters with a Two-stream Skinning Network</a></p>
+<p><a href="../NCloth/index.html">N-Cloth: Predicting 3D Cloth Deformation with Mesh-Based Networks</a></p>
+<p><a href="../PCloth/index.html">P-Cloth: Interactive Cloth Simulation on Multi-GPU Systems using Dynamic Matrix Assembly and Pipelined Implicit Integrators</a></p>
+<p><a href="../ICloth/index.html">I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation</a></p>
+<p><a href="../PSCC/index.html">PSCC: Parallel Self-Collision Culling with Spatial Hashing on GPUs</a></p>
+<p><a href="../gpuCloth/index.html">I-Cloth: API for fast and reliable cloth simulation with CUDA</a></p>
+<p><a href="../BVH-OR/index.html">Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring</a></p>
+<p><a href="http://gamma.cs.unc.edu/PCD/">MCCD: Multi-Core Collision Detection between Deformable Models using Front-Based Decomposition</a></p>
+<p><a href="http://gamma.cs.unc.edu/CBC/">Interactive Continuous Collision Detection between Deformable Models using Connectivity-Based Culling</a></p>
+<p><a href="http://gamma.cs.unc.edu/BSC/index.htm#TightCCD">TightCCD: Efficient and Robust Continuous Collision Detection using Tight Error Bounds</a></p>
+<p><a href="http://gamma.cs.unc.edu/BSC/">Fast and Exact Continuous Collision Detection with Bernstein Sign Classification</a></p>
+<p><a href="http://gamma.cs.unc.edu/gcloth/">A GPU-based Streaming Algorithm for High-Resolution Cloth Simulation</a></p>
+<p><a href="http://gamma.cs.unc.edu/CPF/">Continuous Penalty Forces</a></p>
+<p><a href="http://gamma.cs.unc.edu/DynamicB/">UNC dynamic model benchmark repository</a></p>
+<p><a href="http://gamma.cs.unc.edu/CSTREAMS/">Collision-Streams: Fast GPU-based Collision Detection for Deformable Models</a></p>
+<p><a href="http://gamma.cs.unc.edu/DNF/">Fast Continuous Collision Detection using Deforming Non-Penetration Filters</a></p>
+<p><a href="http://gamma.cs.unc.edu/RTRI/">Fast Collision Detection for Deformable Models using Representative-Triangles</a></p>
+<p><a href="http://gamma.cs.unc.edu/DEFORMCD/">DeformCD: Collision Detection between Deforming Objects</a></p>
+<p><a href="http://gamma.cs.unc.edu/SELFCD/">Self-CCD: Continuous Collision Detection for Deforming Objects</a></p>
+<p><a href="http://gamma.cs.unc.edu/CDCD/">Interactive Collision Detection between Deformable Models using Chromatic Decomposition</a></p>
+<p><a href="http://gamma.cs.unc.edu/DVD/">Fast Proximity Computation Among Deformable Models using Discrete Voronoi Diagrams</a></p>
+<p><a href="http://gamma.cs.unc.edu/CULLIDE/">CULLIDE: Interactive Collision Detection between Complex Models using Graphics Hardware </a></p>
+<p><a href="http://gamma.cs.unc.edu/RCULLIDE/">RCULLIDE: Fast and Reliable Collision Culling using Graphics Processors </a></p>
+<p><a href="http://gamma.cs.unc.edu/QCULLIDE/">Quick-CULLIDE: Efficient Inter- and Intra-Object Collision Culling using Graphics Hardware</a></p>
+<p><a href="http://gamma.cs.unc.edu/research/collision/">Collision Detection</a></p>
+<p><a href="http://gamma.cs.unc.edu/">UNC GAMMA Group </a></p>
+	
+<h2>Acknowledgements</h2>
+<p>
+
+This work is supported in part by  the National Natural
+Science Foundation of China under Grant No.: 61972341, Grant
+No.: 61972342, Grant No.: 61732015, and
+the Tencent-Zhejiang University joint laboratory.
+
+</p>
+<p>&nbsp;</p>
+<p></p><p><br><a href="mailto:tang_m@zju.edu.cn">tang_m@zju.edu.cn</a> 
+</p><p></p></font>
+</font></p:colorscheme></font></body></html>
