@@ -17,7 +17,7 @@ and served as:
     Program Committee Member of CASA 2022,  AniNex 2023 Workshop at CASA 2023,
     Program Committee Member of AAAI-2021,
     Program Committee Member of Pacific Graphics 2021, 2020, 2022,
-    Program Committee Member of Chinagraph 2014, 2016, 2020, 2022,
+    Program Committee Member of Chinagraph 2014, 2016, 2020, 2022, 2024，
     Program Committee Member of ChinaVR 2016, 2021,
     Program Committee Member of I3D 2013, 2014, 2015, 2016, 
     Program Committee Member of Eurographics 2016,
