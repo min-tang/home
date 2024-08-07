@@ -26,7 +26,7 @@ I have served as a reviewer for many international conferences (SIGGRAPH, SIGGRP
 - Program Committee Member of AAAI-2021,
 - Program Committee Member of Pacific Graphics 2021, 2020, 2022, 2024,
 - Program Committee Member of Chinagraph 2014, 2016, 2020, 2022, 2024，
-- Program Committee Member of ChinaVR 2016, 2021,
+- Program Committee Member of ChinaVR 2016, 2021, 2024, 
 - Program Committee Member of I3D 2013, 2014, 2015, 2016, 
 - Program Committee Member of Eurographics 2016,
 - International Program Committee Member of EGSR 2017, 2018, 2019,
