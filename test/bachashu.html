@@ -1,30 +1,23 @@
-<%@ page contentType="text/html; charset=gb2312" language="java" import="java.sql.*" errorPage="" %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>无标题文档</title>
-<style type="text/css">
-<!--
-body {
-	background-image: url(../images/bj41.gif);
-}
-body,td,th {
-	color: #FFFFFF;
-}
-a:link {
-	color: #FFFFFF;
-}
--->
-</style></head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bachashu example</title>
+    <!-- 引入 Ruffle JavaScript -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
 <body>
-<div align="right">
-  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="505" height="400">
-    <param name="movie" value="bachashu.swf">
-    <param name="quality" value="high">
-    <embed src="&#20843;&#21449;&#26641;.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="505" height="400"></embed>
-  </object>
-</div>
+
+    <h1>Welcome to bachashu Example</h1>
+
+    <!-- 嵌入 .swf 文件 -->
+    <object type="application/x-shockwave-flash" data="bachashu.swf" width="505" height="400">
+        <param name="movie" value="bachashu.swf">
+        <param name="quality" value="high">
+         <!-- 如果无法加载Flash内容，会显示以下信息 -->
+        Flash content is not supported. Please enable JavaScript or download Ruffle.
+    </object>
+
 </body>
 </html>
