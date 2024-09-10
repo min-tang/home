@@ -1,0 +1,32 @@
+.bar1 {
+	font-family: "ËÎÌו";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+.title01 {
+	font-family: "ËÎÌו";
+	font-size: 14px;
+	color: #990000;
+	text-decoration: none;
+	line-height: 20px;
+	font-weight: bolder;
+
+
+}
+.title02 {
+	font-family: "ËÎÌו";
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: bolder;
+	color: #000000;
+	text-decoration: none;
+}
+.p1 {
+	font-size: 12px;
+	line-height: 20px;
+	color: #000000;
+	text-indent: 24pt;
+}

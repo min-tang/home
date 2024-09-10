@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>无标题文档</title>
+<style type="text/css">
+<!--
+.style1 {color: #CC0000}
+.style2 {font-size: 16px}
+.style4 {font-size: 16pt}
+-->
+</style>
+</head>
+
+<body>
+<p>2.3.3 <span class="style1">种子填色算法</span>
+</p>
+<p><span class="MsoNormal"><span class="style4"><a href="../../flash/silinfa.html" target="_blank">四临法flash演示</a></span><a href="../../flash/silinfa.html" target="_blank"><img src="images/jiantou1.gif" width="95" height="33" border="0"></a></span> <span class="MsoNormal"><span class="style4"><a href="../../flash/balinfa.html" target="_blank">八临法flash演示</a></span><a href="../../flash/balinfa.html" target="_blank"><img src="images/jiantou1.gif" width="95" height="33" border="0"></a></span> </p>
+<p>种子填色又称边界填色(Boundary-Filling)。它的功能是，给出多边形光栅化后的边界位置及边界色代码boundary_color，以及多边形内的一点(x, y)位置，要求将颜色fill_color填满多边形。</p>
+<p>通常采用的填法有两种：四邻法(4-connected)和八邻法(8-connected)。四邻法是已知(x, y)(图2.10(a)的黑色像素)是多边形内的一点，据此向上下左右4个方向(图2.10(a)中打勾的像素)测试、填色、扩散。四邻法的缺点是有时不能通过狭窄区域，因而不能填满多边形。如图2.10(b)所示，左下角方形中的种子(黑色的像素)不能扩散到右上角的方形中，因为采用四邻法通不过中间的狭窄区域。八邻法是已知(x, y)(图2.10(c)中黑色的像素)为多边形内的一点，即种子，据此可向周围的8个方向(图2.10(c)中打勾的像素)测试、填色、扩散。八邻法的缺点是有时要超填出多边形的边界。如图2.10(d)所示的边界，按八邻法就会将色彩涂出多边形。由于填不满往往比涂出更易于补救，因此四邻法比八邻法用得更普遍。</p>
+<p>四邻法种子填色基本程序如下所示。这种程序书写简洁，但运行效率不高，因为它包含有多余的判断。</p>
+<p>void seed_filling(x, y, fill_color, boundary_color)<br>
+  int x, y, fill_color, boundary_color;<br>
+  {<br>
+  int c;<br>
+  c=inquire_color(x, y);<br>
+  if((c&lt;&gt;boundary_color)&amp;&amp;(c&lt;&gt;fill_color))<br>
+  {<br>
+  set_pixel(x, y, fill_color);<br>
+  seed_filling(x+1, y, fill_color, boundary_color);<br>
+  seed_filling(x-1, y, fill_color, boundary_color);<br>
+  seed_filling(x, y+1, fill_color, boundary_color);<br>
+  seed_filling(x, y-1, fill_color, boundary_color);<br>
+  }<br>
+  }</p>
+<p>请看种子颜色算法的演示程序：</p>
+<p><a href="../openGL/FillPolygon.html" target="_blank"><img src="images/jiantou.gif" width="42" height="41"><span class="style2">种子填色算法</span></a></p>
+<p class=MsoNormal><img src="images/2.10.jpg"></p>
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US><o:p>&nbsp;<span lang=EN-US><span lang=EN-US><a href="2.3.2.htm"><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>&lt;&lt;上一节</span></a><span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></o:p></span><span lang=EN-US><a
+href="2.3.1.htm">2.3.1</a><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><a href="2.3.2.htm">2.3.2</a> <span lang=EN-US> <span lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><a
+href="2.4.1.htm"><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>下一节&gt;&gt;</span></a> </span></span></span></p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,521 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="2.5.2.files/filelist.xml">
+<title>2</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>fafa</o:Author>
+  <o:LastAuthor>fafa</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>86</o:TotalTime>
+  <o:Created>2004-05-13T10:41:00Z</o:Created>
+  <o:LastSaved>2004-05-13T12:31:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>340</o:Words>
+  <o:Characters>1942</o:Characters>
+  <o:Company>fafa</o:Company>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2278</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	line-height:15.75pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+.style1 {color: #CC0000}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='tab-interval:21.0pt;text-justify-trim:
+punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><span lang=EN-US>2.5.2<span style='mso-spacerun:yes'>&nbsp;<span class="style1">
+</span></span></span><span style='font-family:宋体; mso-ascii-font-family:&quot;Times New Roman&quot;; mso-hansi-font-family:&quot;Times New Roman&quot;; color: #CC0000;'>求交线算法</span></p>
+
+<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>求交线显然是指求面与面的交线，下面讨论几种常见的情况。</span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'>&nbsp;</span>= 1 \* GB1 <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-no-proof:yes'>⒈</span><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US> </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>平面与平面的交线</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>在计算机辅助设计中一般使用平面上有界区域。先考虑最简单的情形。两个平面区域分别由</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>P</span></i><span
+lang=EN-US>(<i style='mso-bidi-font-style:normal'>u</i>, <i style='mso-bidi-font-style:
+normal'>w</i>)</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>Q</span></i><span lang=EN-US>(<i style='mso-bidi-font-style:
+normal'>s</i>, <i style='mso-bidi-font-style:normal'>t</i>)</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US>u</span></i><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>w</span></i><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>s</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US>t</span></i><span lang=EN-US style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>&Icirc;</span></span><span lang=EN-US>[0, 1]</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>定义。如果它们不共面而且不分离，则必交于一直线段。这条直线必落在</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>P</span></i><span
+lang=EN-US>(<i style='mso-bidi-font-style:normal'>u</i>, <i style='mso-bidi-font-style:
+normal'>w</i>)</span><span lang=EN-US style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>-</span></span><i style='mso-bidi-font-style:normal'><span lang=EN-US>Q</span></i><span
+lang=EN-US>(<i style='mso-bidi-font-style:normal'>s</i>, <i style='mso-bidi-font-style:
+normal'>t</i>)=0</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>所定义的无限直线上。这是个含有</span><span
+lang=EN-US>4</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>个未知数，</span><span lang=EN-US>3</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>个方程式的方程组，只要分别与</span><span lang=EN-US>8</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>条边界线方程：</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US>u</span></i><span lang=EN-US>=0</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>u</span></i><span
+lang=EN-US>=1</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>w</span></i><span lang=EN-US>=0</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US>w</span></i><span lang=EN-US>=1</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>s</span></i><span
+lang=EN-US>=0</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>，</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>s</span></i><span lang=EN-US>=1</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US>t</span></i><span lang=EN-US>=0</span><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>t</span></i><span
+lang=EN-US>=1</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>联立，即可求出线段的两个端点的参数。在上述方程组中，只要找到两组解，就可以不再对剩余其他方程组求解。找到的两组解就是所求的相交线段端点参数。</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>当两个一般的多边形</span><span lang=EN-US>(</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>可能是凸的，也可能是凹的，甚至可能带有内孔</span><span lang=EN-US>)</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>相交时，可能有多段交线。可以把两个多边形分别记为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>A</span></i><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>和</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>B</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，用如下的算法求出它们的交线：</span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'>&nbsp;</span>= 1 \* GB2 <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-no-proof:yes'>⑴</span><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US> </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>把</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>A</span></i><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的所有边与</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>B</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>求交，求出所有有效交点。</span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'>&nbsp;</span>= 2 \* GB2 <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-no-proof:yes'>⑵</span><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US> </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>把</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>B</span></i><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的所有边与</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>A</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>求交，求出所有有效交点。</span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'>&nbsp;</span>= 3 \* GB2 <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-no-proof:yes'>⑶</span><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US> </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>把所有交点先按</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>y</span></i><span style='font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>，再按</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>x</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的大小进行排序。</span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'>&nbsp;</span>= 4 \* GB2 <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-no-proof:yes'>⑷</span><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US> </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>把每对交点所形成线段的中点与</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>A</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>和</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US>B</span></i><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>进行包含性检测，若该中点既在</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>A</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>中又在</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US>B</span></i><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>中，则这对交点定义了一条交线段。</span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'>&nbsp;</span>= 2 \* GB1 <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-no-proof:yes'>⒉</span><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US> </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>平面与二次曲面的交线</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>求平面与二次曲面的交线有两种方法，即代数法和几何法。</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>用代数法考虑平面与二次曲面求交问题时，可以把二次曲面表示为代数形式</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>Ax</span></i><sup><span
+lang=EN-US>2</span></sup><span lang=EN-US>+<i style='mso-bidi-font-style:normal'>By</i><sup>2</sup>+<i
+style='mso-bidi-font-style:normal'>Cz</i><sup>2</sup>+2<i style='mso-bidi-font-style:
+normal'>Dxy</i>+2<i style='mso-bidi-font-style:normal'>Eyz</i>+2<i
+style='mso-bidi-font-style:normal'>Fxz</i>+2<i style='mso-bidi-font-style:normal'>Gx</i>+2<i
+style='mso-bidi-font-style:normal'>Hy</i>+2<i style='mso-bidi-font-style:normal'>Iz</i>+<i
+style='mso-bidi-font-style:normal'>J</i> = 0</span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>可以通过平移与旋转坐标变换把平面变为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>xOy</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>平面，对二次曲面进行同样的坐标变换。由于在新坐标系下平面的方程为</span><i style='mso-bidi-font-style:
+normal'><span lang=EN-US>z</span></i><span lang=EN-US>=0</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，所以新坐标系下二次曲面方程中，把含</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US>z</span></i><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>项都去掉即为平面与二次曲面的交线方程。对该交线方程进行一次逆坐标变换即可获得在原坐标系下的交线方程。在具体实现时，交线可以用二元二次方程的系数表示</span><span
+lang=EN-US>(</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>代数法表示</span><span lang=EN-US>)</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，辅之以局部坐标系到用户坐标系的变换矩阵。这种方法的缺点是，每当需要使用这些交线时，都要进行坐标变换。例如，判断一个空间点是否在交线上，必须先对该点进行坐标变换，变到</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>z</span></i><span
+lang=EN-US>=0</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>平面上，再进行检测。需要绘制交线时，也要先在局部坐标系下求出点坐标，再变换为用户坐标系下的坐标。所以交线采用另一种方法</span><span
+lang=EN-US>(</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>几何法</span><span lang=EN-US>)</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>更合理。几何法存储曲线的类型</span><span lang=EN-US>(</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>椭圆、抛物线或双曲线</span><span lang=EN-US>)</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>，以及定义参数</span><span lang=EN-US>(</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>中心点、对称轴、半径等</span><span lang=EN-US>)</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>的数值信息，使用局部坐标系到用户坐标系的变换，把局部坐标系下的定义参数变换到用户坐标系直接使用。这第二种方法使用较少的变换，但需要通过计算来判断曲线的种类，并计算曲线的定义参数。由于浮点运算的不精确性，容易发生判错曲线类型以及定义参数的误差过大的问题。</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>当平面与二次曲面的交线需要精确表示时，往往采用几何法求交。二次曲面采用几何法表示，平面与二次曲面求交时，根据它们的相对位置与角度，直接判断交线类型，其准确性大大优于用代数法表示时计算分类的方法。几何法不需要对面进行变换，所以只要通过很少的计算就可以得到交线的精确描述。由于存储的信息是具有几何意义的，所以判断相等性、相对性等问题时，可以确定有几何意义的容差。下面以平面</span><span
+lang=EN-US>—</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>球求交为例，说明几何法求交算法。</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>平面用一个记录</span><span lang=EN-US>p</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>表示，</span><span lang=EN-US>p</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>的两个子域</span><span
+lang=EN-US>p.b</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>、</span><span lang=EN-US>p.w</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>分别代表平面上一点、平面法向量。球面用记录</span><span lang=EN-US>s</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>表示，它的两个子域</span><span lang=EN-US>s.c</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>、</span><span lang=EN-US>s.r</span><span style='font-family:
+宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>分别代表球面中心和半径。则可写出平面与球面相交的算法如下：</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:
+10.0pt'>plane_sphere_intersect(p, s)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:
+10.0pt'>plane p;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:
+10.0pt'>sphere s;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:
+10.0pt'>{<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:41.95pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>d=</span><span
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>球面中心到平面的有向距离；</span><span
+lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:41.95pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>if(abs(d)==s.r)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:41.95pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>{2</span><span
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>个面相交于一</span><span
+lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>(</span><span
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>切</span><span
+lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>)</span><span
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>点</span><span
+lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>s.c</span><span
+lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>-</span></span><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>d*p.w;}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:41.95pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>else if(abs(d)&gt;s.r)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:62.95pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>{</span><span
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>两个面无交；</span><span
+lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:62.95pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>else<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:62.95pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>{</span><span
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:宋体;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'>所求交线是圆。其圆心、半径、圆所在平面法向量为</span><span
+lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:83.9pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>c=s.c</span><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>-</span></span><span lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:
+10.0pt'>d*p.w;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:83.9pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>r=sqrt(s.r<sup>2</sup></span><span
+lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>-</span></span><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>d<sup>2</sup>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:83.9pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>w=p.w;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:62.95pt'><span lang=EN-US
+style='font-size:9.0pt;mso-bidi-font-size:10.0pt'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;mso-bidi-font-size:
+10.0pt'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>一个平面与一个圆柱面可以无交点、交于一条直线</span><span
+lang=EN-US>(</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>切线</span><span lang=EN-US>)</span><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>、二条直线、一个椭圆或一个圆，可以用两个面的定义参数求出它们的相对位置关系和相对角度关系，进而判断其交属于何种情况，并求出交线的定义参数。平面与圆锥的交线也可类似地求出。</span></p>
+
+<p class=MsoNormal><!--[if supportFields]><span lang=EN-US><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'>&nbsp;</span>= 3 \* GB1 <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-no-proof:yes'>⒊</span><!--[if supportFields]><span
+lang=EN-US><span style='mso-element:field-end'></span></span><![endif]--><span
+lang=EN-US> </span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>平面与参数曲面的交线</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>求平面与参数曲面的交线，最简单的方法是把表示参数曲面的变量</span><span
+lang=EN-US>(<i style='mso-bidi-font-style:normal'>x</i>(<i style='mso-bidi-font-style:
+normal'>s</i>, <i style='mso-bidi-font-style:normal'>t</i>), <i
+style='mso-bidi-font-style:normal'>y</i>(<i style='mso-bidi-font-style:normal'>s</i>,
+<i style='mso-bidi-font-style:normal'>t</i>), <i style='mso-bidi-font-style:
+normal'>z</i>(<i style='mso-bidi-font-style:normal'>s</i>, <i style='mso-bidi-font-style:
+normal'>t</i>))</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>代入平面方程</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>ax</span></i><span
+lang=EN-US>+<i style='mso-bidi-font-style:normal'>by</i>+<i style='mso-bidi-font-style:
+normal'>cz</i>+<i style='mso-bidi-font-style:normal'>d</i>=0</span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>得到用参数曲面的参数</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>s</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>、</span><i style='mso-bidi-font-style:normal'><span
+lang=EN-US>t</span></i><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>表示的交线方程</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>ax</span></i><span
+lang=EN-US>(<i style='mso-bidi-font-style:normal'>s</i>, <i style='mso-bidi-font-style:
+normal'>t</i>)+<i style='mso-bidi-font-style:normal'>by</i>(<i
+style='mso-bidi-font-style:normal'>s</i>, <i style='mso-bidi-font-style:normal'>t</i>)+<i
+style='mso-bidi-font-style:normal'>cz</i>(<i style='mso-bidi-font-style:normal'>s</i>,
+<i style='mso-bidi-font-style:normal'>t</i>)+<i style='mso-bidi-font-style:
+normal'>d</i>=0</span></p>
+
+<p class=MsoNormal><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>另一种方法是，用平移和旋转对平面进行坐标变换，使平面成为新坐标系下的</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>xOy</span></i><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>平面。再将相同的变换应用于参数曲面方程，得到参数曲面在新坐标系下的方程</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'><span
+lang=EN-US>(<i style='mso-bidi-font-style:normal'>x</i>*, <i style='mso-bidi-font-style:
+normal'>y</i>*, <i style='mso-bidi-font-style:normal'>z</i>*)=(<i
+style='mso-bidi-font-style:normal'>x</i>*(<i style='mso-bidi-font-style:normal'>s</i>,
+<i style='mso-bidi-font-style:normal'>t</i>), <i style='mso-bidi-font-style:
+normal'>y</i>*(<i style='mso-bidi-font-style:normal'>s</i>, <i
+style='mso-bidi-font-style:normal'>t</i>), <i style='mso-bidi-font-style:normal'>z</i>*(<i
+style='mso-bidi-font-style:normal'>s</i>, <i style='mso-bidi-font-style:normal'>t</i>))</span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>由此得交线在新坐标系下的方程为</span><i
+style='mso-bidi-font-style:normal'><span lang=EN-US>z</span></i><span
+lang=EN-US>*(<i style='mso-bidi-font-style:normal'>s</i>, <i style='mso-bidi-font-style:
+normal'>t</i>)=0</span><span style='font-family:宋体;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'>。</span></p>
+
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US><o:p></o:p></span></p>
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US><o:p><span lang=EN-US><span lang=EN-US><span lang=EN-US><span lang=EN-US><a href="2.5.1.htm"><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'>&lt;&lt;上一节</span></a><span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></span>&nbsp;</span>&nbsp;</o:p></span><span lang=EN-US><a href="2.5.htm">2.5</a><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><a
+href="2.5.1.htm">2.5.1</a><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><a
+href="2.5.3.htm">2.5.3</a><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><a
+href="2.5.4.htm">2.5.4</a><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><a
+href="2.5.5.htm">2.5.5</a> <span lang=EN-US><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="2.5.3.htm">下一节&gt;&gt;</a></span></span></span></p>
+<p class=MsoNormal style='text-indent:0cm'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
