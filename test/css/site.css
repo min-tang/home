@@ -1,0 +1,63 @@
+BODY {
+	FONT-SIZE: 12px; SCROLLBAR-HIGHLIGHT-COLOR: buttonface; SCROLLBAR-SHADOW-COLOR: buttonface; COLOR: #333333; SCROLLBAR-3DLIGHT-COLOR: buttonhighlight; SCROLLBAR-TRACK-COLOR: #eeeeee; FONT-FAMILY: "MS Shell Dlg", "Tahoma", "宋体"; SCROLLBAR-DARKSHADOW-COLOR: buttonshadow
+}
+PRE {
+	FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: "MS Shell Dlg", "Tahoma", "宋体"
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #333333; LINE-HEIGHT: 150%
+}
+UL {
+	MARGIN-BOTTOM: 0px; MARGIN-LEFT: 16px; WORD-BREAK: break-all; LINE-HEIGHT: 200%; MARGIN-RIGHT: 0px
+}
+A:link {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #6600ff! important; TEXT-DECORATION: underline! important
+}
+A.navbar {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A.navbar:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.whitelink {
+	COLOR: #ffffff! important; TEXT-DECORATION: none! important
+}
+A.whitelink:hover {
+	COLOR: #ffff00! important; TEXT-DECORATION: underline! important
+}
+.white {
+	COLOR: #ffffff
+}
+.chinese {
+	FONT-SIZE: 12px; FONT-FAMILY: "宋体"
+}
+.english {
+	FONT-SIZE: 11px; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"
+}
+.font1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+.font2 {
+	LETTER-SPACING: 2px
+}
+.input1 {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #666666 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; PADDING-BOTTOM: 1px; BORDER-LEFT: #666666 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: "MS Shell Dlg", "Tahoma", "宋体"; HEIGHT: 18px; BACKGROUND-COLOR: #eeeeee
+}
+.input2 {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; PADDING-BOTTOM: 1px; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: "MS Shell Dlg", "Tahoma", "宋体"; HEIGHT: 18px; BACKGROUND-COLOR: #ffffff
+}
+.input3 {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; PADDING-BOTTOM: 1px; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: "MS Shell Dlg", "Tahoma", "宋体"; BACKGROUND-COLOR: #ffffff
+}
+.input4 {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 1px; BORDER-TOP: 0px; PADDING-LEFT: 1px; FONT-SIZE: 12px; PADDING-BOTTOM: 1px; BORDER-LEFT: 0px; CURSOR: text; PADDING-TOP: 1px; BORDER-BOTTOM: #333333 1px solid; FONT-FAMILY: "MS Shell Dlg", "Tahoma", "宋体"; HEIGHT: 18px
+}
+.button1 {
+	BORDER-RIGHT: #665b8e 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; BACKGROUND: #cccccc; PADDING-BOTTOM: 1px; BORDER-LEFT: #ffffff 1px solid; CURSOR: hand; COLOR: #333333; PADDING-TOP: 1px; BORDER-BOTTOM: #665b8e 1px solid; FONT-FAMILY: "MS Shell Dlg", "Tahoma", "宋体"; HEIGHT: 18px
+}
