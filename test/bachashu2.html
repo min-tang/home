@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruffle Flash Example</title>
+    <!-- 引入 Ruffle JavaScript -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+<body>
+
+    <h1>Welcome to Ruffle Flash Example</h1>
+
+    <!-- 嵌入 .swf 文件 -->
+    <object type="application/x-shockwave-flash" data="example.swf" width="800" height="600">
+        <param name="movie" value="bachashu.swf">
+        <!-- 如果无法加载Flash内容，会显示以下信息 -->
+        Flash content is not supported. Please enable JavaScript or download Ruffle.
+    </object>
+
+</body>
+</html>
