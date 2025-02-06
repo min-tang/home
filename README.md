@@ -43,3 +43,5 @@ I have served as a reviewer for many international conferences (SIGGRAPH, SIGGRP
 ## [Recent Research](Data/projects.html)
 
 ## [Recent Publications](Data/papers.html)
+
+## [Recent Patents](Data/patents.html)
