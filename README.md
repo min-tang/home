@@ -31,7 +31,7 @@ I have served as a reviewer for many international conferences (SIGGRAPH, SIGGRP
 - Program Committee Member of I3D 2013, 2014, 2015, 2016, 
 - Program Committee Member of Eurographics 2016,
 - International Program Committee Member of EGSR 2017, 2018, 2019,
-- Program Committee Member of China CAD&CG 2017, China CAD&CG 2018-GDC 2018, China GDC 2019 - CAD&CG 2019, China CAD/Graphics 2021, China CAD&CG 2023, China CAD&CG 2024,
+- Program Committee Member of China CAD&CG 2017, China CAD&CG 2018-GDC 2018, China GDC 2019 - CAD&CG 2019, China CAD/Graphics 2021, China CAD&CG 2023, China CAD&CG 2024, CCF CAD/CG 2025,
 - International Program Committee Member of SCA 2019, 2023, 2024,
 - Board of Reviewers Member of WSCG 2012, 2013, 2014,
 - Local Organizing Chair of CVM 2013. 
