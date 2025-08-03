@@ -24,7 +24,7 @@ I have served as a reviewer for many international conferences (SIGGRAPH, SIGGRP
 - Program Committee Member of CVM 2024, CVM 2025,
 - Program Committee Member of CGI 2023, CGI 2024, CGI 2025,
 - Program Committee Member of CASA 2022,  AniNex Workshop at CASA 2023, CASA2024, AniNex Workshop at CASA 2025,
-- Program Committee Member of AAAI-2021,
+- Program Committee Member of AAAI-2021, AAAI-2026,
 - Program Committee Member of Pacific Graphics 2021, 2020, 2022, 2024, 2025,
 - Program Committee Member of Chinagraph 2014, 2016, 2020, 2022, 2024，
 - Program Committee Member of ChinaVR 2016, 2021, 2024, 
@@ -45,3 +45,4 @@ I have served as a reviewer for many international conferences (SIGGRAPH, SIGGRP
 ## [Recent Publications](Data/papers.html)
 
 ## [Recent Patents](Data/patents.html)
+
