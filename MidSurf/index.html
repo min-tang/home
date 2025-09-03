@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+<i>MidSurfer</i>: Efficient Mid-surface Abstraction from Variable Thin-walled Models
+</title>
+
+<meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
+</head><body link="#95DDFF" bgcolor="#333333" text="#dddddd" vlink="#AAAAAA"><font face="verdana,sans-serif"><p:colorscheme colors="#666699,#ffffff,#3e3e5c,#ccff66,#60597b,#6666ff,#99ccff,#ffff99">
+<div style="mso-char-wrap: 1; mso-kinsoku-overflow: 1; tab-interval: .5625in" class="O" v:shape="_x0000_s1026"><font size="+4">
+<i>MidSurfer</i>: Efficient Mid-surface Abstraction from Variable Thin-walled Models
+</font></div>
+<h3>by 
+  <font face="verdana,sans-serif">Li Ye<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, Xinhang Zhou<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, Peng Fan<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, Ruofeng Tong<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, Hailong Li<sup><font face="Verdana">3</font></sup>
+  <font face="verdana,sans-serif">, Peng Du<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, and <a href="https://min-tang.github.io/home/">Min Tang</a><sup><font face="Verdana">1, 2, *</font></sup>
+</h3>
+ <p><i><font size="4" face="Times New Roman">1 - College of Computer Science and Technology, Zhejiang University, Hangzhou, 310007, China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">2 - Zhejiang Sci-Tech University, Hangzhou, 310018, China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">3 - Shenzhen Poisson Software Co., Ltd., Shenzhen, 518129, China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">* - Corresponding Author</font></i></p>
+
+ <p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Abstract</b></font>
+</font></p><p><font face="verdana,sans-serif">
+This paper addresses the challenge of efficiently abstracting mid-surfaces from complex variable thin-walled models, 
+a critical task in computer-aided design (CAD) and finite element analysis (FEA) for simplifying thin-walled structures.
+Traditional methods often require manual specification of pairing faces, which can be time-consuming and error-prone. 
+Alternatively, automatic face pairing methods fail to meet the actual needs of variable thin-walled models, resulting in the accumulation of topological errors.
+Additionally, existing algorithms struggle to extract mid-surfaces from models with varying wall thickness or produce mid-surfaces with poor accuracy, leading to geometric errors. 
+Furthermore, the computational efficiency of these methods is often inadequate for large-scale models. To overcome these challenges, 
+we propose an automated face-pairing mechanism that eliminates the need for manual intervention, 
+enhancing the algorithm’s robustness and enabling it to handle cases that the commercial CAD modeling engine, Parasolid, cannot process. 
+Our approach accurately processes variable thin-walled models, with results closely aligning with the ground truth, as demonstrated by the provided error distribution tables. Moreover, 
+our algorithm achieves a 4 − 12 times improvement in efficiency than previous methods over the geometry extraction stage and supports multi-threaded acceleration, 
+significantly reducing computation time. Experimental results demonstrate that our algorithm surpasses existing methods in both accuracy and efficiency, 
+offering a promising solution for mid-surface extraction in complex, variable thin-walled models.
+<br>
+&nbsp;</font></p>
+
+<p align="center"><font face="verdana,sans-serif">&nbsp;</font>
+<img border="0" src="./files/Fig_teaser.jpg" width="900">
+</p>
+
+<p>
+<font face="verdana,sans-serif"><i><b>Overview: </b></i>  
+The input thin-walled model’s faces are first classified into different types and further organized into distinct face group
+pairs (FGPs). Subsequently, the mid-surface geometry extraction algorithm extracts the mid-surface for each face group based on the wall thickness. Finally, the model
+undergoes trimming operations, including intersection and imprinting, to determine the boundaries of the mid-surface, thereby yielding the final mid-surface. 
+</font>
+<font face="verdana,sans-serif">
+</font></p>
+
+<br>
+
+<p align="center"><font face="verdana,sans-serif">&nbsp;</font>
+<img border="0" src="./files/Fig_Benchmark_new.jpg" width="600">
+</p>
+
+<p>
+<font face="verdana,sans-serif"><i><b>Benchmark: </b></i></font>
+<font face="verdana,sans-serif">
+<ul>
+  <li>
+    Model 1: A plastic thin-shell model with constant wall
+thickness, consisting of 37 faces and no multi-face pairing
+scenarios, used to validate the algorithm’s basic capabilities.
+  </li>
+  <li>
+    Model 2: A ceramic bowl with 17 faces, including 8
+variable-thickness face pairs. This model represents a simple case with only 1-1 or 1-n face pairs.
+  </li>
+  <li>
+    Model 3: A turbo impeller, comprising 91 faces, most of
+which involve 1-n or n-n pair faces. The freeform surfaces exhibit more complex variations, challenging the algorithm’s handling of intricate geometry.
+  </li>
+  <li>
+    Model 4: The original version of Model 1 without feature suppression, containing both constant and variable wall
+thickness scenarios with 78 faces. It better represents the
+true mid-surface of Model 1.
+  </li>
+  <li>
+    Model 5: A tire model from the automotive industry, featuring 167 faces, including 28 variable-wall thickness face
+pairs and 27 n-n face pairs. Its complex topology and
+diverse variable wall thickness scenarios pose significant
+challenges.
+  </li>
+  <li>
+    Model 6: An aircraft model from a real-world aerospace
+scenario, with 286 faces and highly complex topological
+and geometric structures, used to verify the algorithm’s robustness under the most challenging conditions.
+  </li>
+</ul>
+
+</font></p>
+
+<h2><font face="verdana,sans-serif">Contents </font></h2><font face="verdana,sans-serif">
+</font></font><p>
+	
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana">
+<a href="./files/CAD-MidSurfer.pdf">Paper</a>&nbsp;(PDF 5.11 MB) 
+</font>
+<p></p>
+<font face="verdana,sans-serif"><a href="./files/CAD-MidSurfer-Supplementary Material.pdf">Supplementary Material</a>
+ <font color="#ffffff" face="Verdana">(PDF 0.93 MB) </font></font><font face="verdana,sans-serif">
+</font>
+<p></p>
+<font face="verdana,sans-serif"><a href="./files/CAD-MidSurfer-Video.mp4">Supplementary Video</a>
+ <font color="#ffffff" face="Verdana">(205.1 MB) </font></font><font face="verdana,sans-serif">
+</font>
+<p></p>
+<!-- <font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana">
+Source Code: <a href="https://github.com/yingtix/DistanceQuery">https://github.com/yingtix/DistanceQuery</a>&nbsp;
+</font> -->
+
+</font><font face="verdana,sans-serif"> 
+</font></font><font face="Verdana" color="#ffffff"></font></p><p><font face="Verdana" color="#ffffff">
+Li Ye, Xinhang Zhou, Peng Fan, Ruofeng Tong, Hailong Li, Peng Du and Min Tang. 2025.
+<i>MidSurfer</i>: Efficient Mid-surface Abstraction from Variable Thin-walled Models.
+Computer-Aided Design (2025) 1–14, Accepted.
+
+</font><font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif">&nbsp;&nbsp;&nbsp;@article{ye25midsurfer,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author = {Ye, Li and Zhou, Xinhang and Fan, Peng and Tong, Ruofeng and Li, Hailong and Du, Peng and Tang, Min},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = {MidSurfer: Efficient Mid-surface Abstraction from Variable Thin-walled Models},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;journal = {Computer-Aided Design},
+<!-- <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pages = {103940}, -->
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year = {2025},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;publisher = {Elsevier}
+<br>&nbsp;&nbsp;&nbsp;}
+</font></p>
+
+<h2><font face="verdana,sans-serif">&nbsp;</font></h2><font face="verdana,sans-serif">
+<h2>Related Links</h2> 
+<p><a href="../gDist/">gDist: Efficient Distance Computation between 3D Meshes on GPU</a></p>
+<p><a href="../CTSN/">CTSN: Predicting Cloth Deformation for Skeleton-based Characters with a Two-stream Skinning Network</a></p>
+<p><a href="../DCloth/">D-Cloth: Skinning-based Cloth Dynamic Prediction with a Three-stage Network</a></p>
+<p><a href="../NCloth/">N-Cloth: Predicting 3D Cloth Deformation with Mesh-Based Networks</a></p>
+<p><a href="../PCloth/">P-Cloth: Interactive Cloth Simulation on Multi-GPU Systems using Dynamic Matrix Assembly and Pipelined Implicit Integrators</a></p>
+<p><a href="../ICloth/">I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation</a></p>
+<p><a href="../PSCC/">PSCC: Parallel Self-Collision Culling with Spatial Hashing on GPUs</a></p>
+<p><a href="../gpuCloth/">I-Cloth: API for fast and reliable cloth simulation with CUDA</a></p>
+<p><a href="../BVH-OR/">Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring</a></p>
+<p><a href="http://gamma.cs.unc.edu/PCD/">MCCD: Multi-Core Collision Detection between Deformable Models using Front-Based Decomposition</a></p>
+<p><a href="http://gamma.cs.unc.edu/CBC/">Interactive Continuous Collision Detection between Deformable Models using Connectivity-Based Culling</a></p>
+<p><a href="http://gamma.cs.unc.edu/BSC/index.htm#TightCCD">TightCCD: Efficient and Robust Continuous Collision Detection using Tight Error Bounds</a></p>
+<p><a href="http://gamma.cs.unc.edu/BSC/">Fast and Exact Continuous Collision Detection with Bernstein Sign Classification</a></p>
+<p><a href="http://gamma.cs.unc.edu/gcloth/">A GPU-based Streaming Algorithm for High-Resolution Cloth Simulation</a></p>
+<p><a href="http://gamma.cs.unc.edu/CPF/">Continuous Penalty Forces</a></p>
+<p><a href="http://gamma.cs.unc.edu/DynamicB/">UNC dynamic model benchmark repository</a></p>
+<p><a href="http://gamma.cs.unc.edu/CSTREAMS/">Collision-Streams: Fast GPU-based Collision Detection for Deformable Models</a></p>
+<p><a href="http://gamma.cs.unc.edu/DNF/">Fast Continuous Collision Detection using Deforming Non-Penetration Filters</a></p>
+<p><a href="http://gamma.cs.unc.edu/RTRI/">Fast Collision Detection for Deformable Models using Representative-Triangles</a></p>
+<p><a href="http://gamma.cs.unc.edu/DEFORMCD/">DeformCD: Collision Detection between Deforming Objects</a></p>
+<p><a href="http://gamma.cs.unc.edu/SELFCD/">Self-CCD: Continuous Collision Detection for Deforming Objects</a></p>
+<p><a href="http://gamma.cs.unc.edu/CDCD/">Interactive Collision Detection between Deformable Models using Chromatic Decomposition</a></p>
+<p><a href="http://gamma.cs.unc.edu/DVD/">Fast Proximity Computation Among Deformable Models using Discrete Voronoi Diagrams</a></p>
+<p><a href="http://gamma.cs.unc.edu/CULLIDE/">CULLIDE: Interactive Collision Detection between Complex Models using Graphics Hardware </a></p>
+<p><a href="http://gamma.cs.unc.edu/RCULLIDE/">RCULLIDE: Fast and Reliable Collision Culling using Graphics Processors </a></p>
+<p><a href="http://gamma.cs.unc.edu/QCULLIDE/">Quick-CULLIDE: Efficient Inter- and Intra-Object Collision Culling using Graphics Hardware</a></p>
+<p><a href="http://gamma.cs.unc.edu/research/collision/">Collision Detection</a></p>
+<p><a href="http://gamma.cs.unc.edu/">UNC GAMMA Group </a></p>
+	
+<h2>Acknowledgements</h2>
+<p>
+This work was funded in part by "Pioneer" and "Leading Goose" R&D Program of Zhejiang Province (No. 2025C01086).
+<p>&nbsp;</p>
+<p></p><p><br><a href="mailto:tang_m@zju.edu.cn">tang_m@zju.edu.cn</a> 
+</p><p></p></font>
+</font></p:colorscheme></font></body></html>
