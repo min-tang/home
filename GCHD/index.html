@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+GPU-accelerated Certified Hausdorff Distance Between Triangle Meshes
+</title>
+
+<meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
+</head><body link="#95DDFF" bgcolor="#333333" text="#dddddd" vlink="#AAAAAA"><font face="verdana,sans-serif"><p:colorscheme colors="#666699,#ffffff,#3e3e5c,#ccff66,#60597b,#6666ff,#99ccff,#ffff99">
+<div style="mso-char-wrap: 1; mso-kinsoku-overflow: 1; tab-interval: .5625in" class="O" v:shape="_x0000_s1026"><font size="+4">
+GPU-accelerated Certified Hausdorff Distance Between Triangle Meshes
+</font></div>
+<h3>by 
+  <font face="verdana,sans-serif"><a href="https://orcid.org/0009-0006-2701-1123">Haopeng Fan</a><sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, <a href="https://min-tang.github.io/home/">Min Tang</a><sup><font face="Verdana">1, 2, *</font></sup>
+  <font face="verdana,sans-serif">, <a href="http://mtm.ufsc.br/~leo/">Leonardo Sacht</a><sup><font face="Verdana">3</font></sup>
+  <font face="verdana,sans-serif">, <a href="https://qiang-zou.github.io/">Qiang Zou</a><sup><font face="Verdana">4</font></sup>
+  <font face="verdana,sans-serif">, <a href="http://give.zju.edu.cn/en/memberHomepage/TongRuofeng.html">Ruofeng Tong</a><sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, and <a href="https://orcid.org/0000-0003-3396-9283">Peng Du</a><sup><font face="Verdana">4</font></sup>
+</h3>
+ <p><i><font size="4" face="Times New Roman">1 - Zhejiang University, China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">2 - Zhejiang Sci-Tech University, China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">3 - Universidade Federal de Santa Catarina, Brazil</font></i></p>
+ <p><i><font size="4" face="Times New Roman">4 - State Key Lab of CAD and CG, Zhejiang University, China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">* - Corresponding Author</font></i></p>
+
+ <p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Abstract</b></font>
+</font></p><p><font face="verdana,sans-serif">
+Computing the directed Hausdorff distance between two triangle meshes is a fundamental
+operation in geometry processing and simulation. While existing certified branch-and-bound
+(B&amp;B) methods are efficient for well-separated geometry, they can become prohibitively
+expensive on large models under tight tolerances and near-zero distance configurations where
+pruning is limited. We present a GPU-accelerated certified B&amp;B algorithm that explicitly
+maintains enclosing lower and upper bounds on the directed Hausdorff distance and terminates
+once their normalized gap, measured with respect to the bounding-box diagonal of the source
+mesh, meets a user-prescribed tolerance. To map the inherently prioritized search to SIMT
+(single-instruction multiple-thread) hardware, we replace priority queues and recursion with
+a sorted, double-buffered wavefront pipeline built from bulk-parallel worklists for bound
+evaluation, culling, subdivision, and compaction. To mitigate loose bounds on thin primitives
+while preserving predictable stream behavior, we introduce a fixed-cardinality adaptive
+subdivision scheme that selectively applies double longest-edge bisection. To remain robust
+in deep-refinement regimes, we add a resource-aware deferral mechanism that enforces a
+device-capacity invariant by prioritizing candidates likely to be culled while postponing
+expensive ones. Finally, we improve numerical robustness under FP32 (single precision) via
+triangle-local coordinate transforms and other conservative numerical safeguards, and enhance
+coherence by spatially ordering the active set and traversing the BVH (bounding volume
+hierarchy) in triangle packets. Under the same stopping tolerance, experiments on an NVIDIA
+RTX 5090 show that our GPU solver remains numerically consistent with the FP64 CPU baseline,
+with normalized cross-platform deviation below 0.01% in over 99.9% of cases. Our method achieves
+millisecond-scale runtimes capable of supporting interactive frame rates, even on models with
+millions of triangles. Across the comparison set, it delivers throughput speedups of 836&times;
+on the Thingi10K/TetWild benchmark (<i>A</i> &rarr; <i>B</i>) and 709&times; on the
+Thingi10K/Decimation benchmark.
+<br>
+&nbsp;</font></p>
+
+<p align="center"><font face="verdana,sans-serif">&nbsp;</font>
+<img border="0" src="./files/teaser.jpg" width="900" height="600"></p>
+
+
+<p>
+<font face="verdana,sans-serif"><i><b>Benchmark: </b></i>  
+Calculating the Hausdorff distance between similar objects is challenging. Zoomed-in views show
+the point on <i>A</i> that maximizes the distance to <i>B</i> and its closest point on <i>B</i>:
+the distance between these points is smaller than 0.0004% of the bounding-box diagonal. The
+state-of-the-art cascading-upper-bounds CPU baseline takes 92,575 ms to reach the target
+tolerance; a Baseline GPU implementation (our direct parallel port of the cascading-upper-bounds
+pipeline) takes 174 ms; and our method takes 14 ms under the same settings.
+</font>
+<font face="verdana,sans-serif">
+</font></p>
+
+<h2><font face="verdana,sans-serif">Contents </font></h2><font face="verdana,sans-serif">
+</font></font><p>
+	
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana">
+<a href="./files/sig2026_Hausdorff_dist.pdf">PDF</a>&nbsp;(18.4MB) 
+</font>
+<p></p>
+<font face="verdana,sans-serif"><a href="./files/HD-video.mp4">Video</a>
+ <font color="#ffffff" face="Verdana">(10.5MB)</font></font><font face="verdana,sans-serif">
+</font>
+<p></p>
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana">
+Source Code: <a href="https://github.com/fhp-transient/gpu-hausdorff">https://github.com/fhp-transient/gpu-hausdorff</a>&nbsp;
+</font>
+
+</font><font face="verdana,sans-serif"> 
+</font></font><font face="Verdana" color="#ffffff"></font></p><p><font face="Verdana" color="#ffffff">
+Haopeng Fan, Min Tang, Leonardo Sacht, Qiang Zou, Ruofeng Tong, and Peng Du. 2026.
+GPU-accelerated Certified Hausdorff Distance Between Triangle Meshes. In
+ACM SIGGRAPH 2026 (SIGGRAPH Conference Papers '26), Journal Paper, Los Angeles,
+CA, USA. ACM, New York, NY, USA, 12 pages.
+</font><font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif">&nbsp;&nbsp;&nbsp;@inproceedings{fan2026gpuhausdorff,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author = {Fan, Haopeng and Tang, Min and Sacht, Leonardo and Zou, Qiang and Tong, Ruofeng and Du, Peng},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = {{GPU-accelerated} Certified {Hausdorff} Distance Between Triangle Meshes},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;booktitle = {ACM SIGGRAPH 2026},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location = {Los Angeles, CA, USA},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pages = {1--12},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year = {2026},
+<br>&nbsp;&nbsp;}
+</font></p>
+
+<h2><font face="verdana,sans-serif">&nbsp;</font></h2><font face="verdana,sans-serif">
+<h2>Related Links</h2> 
+<h3><font color="#ffffff">CPU state-of-the-art &mdash; direct baseline</font></h3>
+<p><a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.15129">Cascading Upper Bounds for Triangle Soup Pompeiu&ndash;Hausdorff Distance (Sacht and Jacobson, CGF 2024)</a></p>
+
+<h3><font color="#ffffff">GPU-accelerated Hausdorff distance (related GPU work)</font></h3>
+<p><a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.70229">RT-HDIST: Ray-Tracing Core-based Hausdorff Distance Computation (Kim et al., CGF 2025)</a></p>
+<p><a href="https://scholar.google.com/scholar?q=DisTorch+fast+GPU+3D+Hausdorff+distance+Rony+Kervadec+2025">DisTorch: A fast GPU implementation of 3D Hausdorff distance (Rony and Kervadec, MIDL 2025)</a></p>
+<p><a href="https://doi.org/10.1016/j.cad.2011.08.020">GPU-accelerated Hausdorff Distance Computation between Dynamic Deformable NURBS Surfaces (Krishnamurthy, McMains, and Hanniel, CAD 2011)</a></p>
+<p><a href="https://doi.org/10.1016/j.gmod.2012.03.005">Computing the Hausdorff Distance between NURBS Surfaces using Numerical Iteration on the GPU (Hanniel, Krishnamurthy, and McMains, Graphical Models 2012)</a></p>
+
+<h3><font color="#ffffff">Branch-and-bound Hausdorff distance for triangle meshes (CPU)</font></h3>
+<p><a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.14463">Economic Upper Bound Estimation in Hausdorff Distance Computation for Triangle Meshes (Zheng et al., CGF 2022)</a></p>
+<p><a href="https://doi.org/10.1016/j.cagd.2018.03.023">Fast and Robust Hausdorff Distance Computation from Triangle Mesh to Quad Mesh in Near-zero Cases (Kang et al., CAGD 2018)</a></p>
+<p><a href="https://dl.acm.org/doi/10.1145/1531326.1531380">Interactive Hausdorff Distance Computation for General Polygonal Models (Tang, Lee, and Kim, ACM TOG 2009)</a></p>
+<p><a href="https://doi.org/10.1016/j.cagd.2010.04.004">Precise Hausdorff Distance Computation between Polygonal Meshes (Barto&#328; et al., CAGD 2010)</a></p>
+<p><a href="https://scholar.google.com/scholar?q=Fast+and+accurate+Hausdorff+distance+calculation+between+meshes+Guthe+2005">Fast and Accurate Hausdorff Distance Calculation between Meshes (Guthe, Borodin, and Klein, WSCG 2005)</a></p>
+
+<h3><font color="#ffffff">Sampling-based mesh error measurement</font></h3>
+<p><a href="https://onlinelibrary.wiley.com/doi/10.1111/1467-8659.00236">Metro: Measuring Error on Simplified Surfaces (Cignoni, Rocchini, and Scopigno, CGF 1998)</a></p>
+<p><a href="https://ieeexplore.ieee.org/document/1035879">MESH: Measuring Errors between Surfaces using the Hausdorff Distance (Aspert, Santa-Cruz, and Ebrahimi, ICME 2002)</a></p>
+
+<h3><font color="#ffffff">Hausdorff distance for freeform curves and surfaces</font></h3>
+<p><a href="https://doi.org/10.1016/j.cagd.2021.101967">Precise Hausdorff Distance Computation for Freeform Surfaces based on Osculating Toroidal Patches (Son, Kim, and Elber, CAGD 2021)</a></p>
+<p><a href="https://doi.org/10.1016/j.cad.2012.10.030">Efficient Hausdorff Distance Computation for Freeform Geometric Models in Close Proximity (Kim et al., CAD 2013)</a></p>
+<p><a href="https://scholar.google.com/scholar?q=Precise+Hausdorff+distance+computation+for+planar+freeform+curves+biarcs+Kim+2010">Precise Hausdorff Distance Computation for Planar Freeform Curves using Biarcs and Depth Buffer (Kim et al., Visual Computer 2010)</a></p>
+<p><a href="https://doi.org/10.1016/j.cad.2010.06.009">Computing the Hausdorff Distance between two B-spline Curves (Chen et al., CAD 2010)</a></p>
+<p><a href="https://scholar.google.com/scholar?q=Hausdorff+minimal+distances+parametric+freeforms+Elber+Grandine+2008">Hausdorff and Minimal Distances between Parametric Freeforms (Elber and Grandine, GMP 2008)</a></p>
+<p><a href="https://scholar.google.com/scholar?q=Computing+the+Hausdorff+distance+between+curved+objects+Alt+Scharf+2008">Computing the Hausdorff Distance between Curved Objects (Alt and Scharf, IJCGA 2008)</a></p>
+
+<h3><font color="#ffffff">Hausdorff distance for point sets</font></h3>
+<p><a href="https://ieeexplore.ieee.org/document/7053955">An Efficient Algorithm for Calculating the Exact Hausdorff Distance (Taha and Hanbury, IEEE TPAMI 2015)</a></p>
+<p><a href="https://scholar.google.com/scholar?q=efficient+directly+compute+exact+Hausdorff+distance+3D+point+sets+Zhang+2017">An Efficient Approach to Directly Compute the Exact Hausdorff Distance for 3D Point Sets (Zhang et al., ICAE 2017)</a></p>
+
+<h3><font color="#ffffff">GPU-based proximity and distance queries</font></h3>
+<p><a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1467-8659.2009.01611.x">gProximity: Hierarchical GPU-based Operations for Collision and Distance Queries (Lauterbach, Mo, and Manocha, CGF 2010)</a></p>
+<p><a href="https://min-tang.github.io/home/gDist/">gDist: Efficient Distance Computation between 3D Meshes on GPU (Fan et al., SIGGRAPH Asia 2024)</a></p>
+<p><a href="https://scholar.google.com/scholar?q=Accelerating+geometric+queries+using+the+GPU+Krishnamurthy+McMains+Halle+2009">Accelerating Geometric Queries using the GPU (Krishnamurthy, McMains, and Halle, SPM 2009)</a></p>
+
+<h3><font color="#ffffff">Applications motivating certified Hausdorff distance</font></h3>
+<p><a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.14375">Developable Approximation via Gauss Image Thinning (Binninger et al., SGP / CGF 2021)</a></p>
+
+<h3><font color="#ffffff">Datasets and tools</font></h3>
+<p><a href="https://ten-thousand-models.appspot.com/">Thingi10K: A Dataset of 10,000 3D-Printing Models (Zhou and Jacobson, 2016)</a></p>
+<p><a href="https://wildmeshing.github.io/tetwild/">TetWild: Tetrahedral Meshing in the Wild (Hu et al., ACM TOG 2018)</a></p>
+	
+<h2>Acknowledgements</h2>
+<p>
+This work was supported by "Pioneer" and "Leading Goose" R&D Program of Zhejiang Province under Grant No. 2025C01086.
+<p>&nbsp;</p>
+<p></p><p><br><a href="mailto:tang_m@zju.edu.cn">tang_m@zju.edu.cn</a> 
+</p><p></p></font>
+</font></p:colorscheme></font></body></html>
