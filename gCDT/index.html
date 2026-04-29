@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+gCDT: A Highly Parallel GPU Algorithm for Large-Scale Constrained Delaunay Triangulation
+</title>
+
+<meta name="GENERATOR" content="MSHTML 8.00.6001.18975">
+</head><body link="#95DDFF" bgcolor="#333333" text="#dddddd" vlink="#AAAAAA"><font face="verdana,sans-serif"><p:colorscheme colors="#666699,#ffffff,#3e3e5c,#ccff66,#60597b,#6666ff,#99ccff,#ffff99">
+<div style="mso-char-wrap: 1; mso-kinsoku-overflow: 1; tab-interval: .5625in" class="O" v:shape="_x0000_s1026"><font size="+4">
+gCDT: A Highly Parallel GPU Algorithm for Large-Scale Constrained Delaunay Triangulation
+</font></div>
+<h3>by 
+  <font face="verdana,sans-serif">Peng Fan<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, <a href="https://min-tang.github.io/home/">Min Tang</a><sup><font face="Verdana">1, 2, *</font></sup>
+  <font face="verdana,sans-serif">, Ruofeng Tong<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, Lili He<sup><font face="Verdana">2</font></sup>
+  <font face="verdana,sans-serif">, Peng Du<sup><font face="Verdana">1</font></sup>
+  <font face="verdana,sans-serif">, and Hailong Li<sup><font face="Verdana">3</font></sup>
+</h3>
+ <p><i><font size="4" face="Times New Roman">1 - Zhejiang University, China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">2 - Zhejiang Sci-Tech University, China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">3 - Shenzhen Poisson Software Co., Ltd., China</font></i></p>
+ <p><i><font size="4" face="Times New Roman">* - Corresponding Author</font></i></p>
+
+ <p><font face="verdana,sans-serif"><font color="#ffffff" size="5" face="Verdana"><b>Abstract</b></font>
+</font></p><p><font face="verdana,sans-serif">
+2D constrained Delaunay triangulation (CDT) is a key component in CAD, visualization, and scientific computing.
+ We present a highly parallel GPU-based method that is capable of computing CDT for inputs with up to 10 
+ million vertices in 0.1 seconds on a NVIDIA GeForce RTX 4090 GPU, while efficiently and robustly enforcing
+ arbitrary valid constraints. Across benchmarks with diverse spatial distributions, our method typically delivers
+ several-fold speedups over the prior state-of-the-art GPU approach and is roughly an order of magnitude faster
+ than widely used CPU implementations. The efficiency stems from an improved parallel edge-flip scheme coupled 
+ with a constraint-handling algorithm with provable time complexity, enabling stable performance even in 
+ adversarial and worst-case configurations.
+<br>
+&nbsp;</font></p>
+
+<p align="center"><font face="verdana,sans-serif">&nbsp;</font>
+<img border="0" src="./files/gcdt.jpg" width="1700" height="1134"></p>
+
+
+<p>
+<font face="verdana,sans-serif"><i><b>Letters benchmark: </b></i>  
+For a scene containing approximately 900K vertices with numerous constraints of varying sizes, gCDT achieves an overall
+speedup of roughly 25X over the prior state-of-the-art GPU-based CDT algorithm gDel2D [Qi et al. 2013, 2019], 
+while the constraint-processing component is
+nearly three orders of magnitude faster. </font>
+<font face="verdana,sans-serif">
+</font></p>
+
+<h2><font face="verdana,sans-serif">Contents </font></h2><font face="verdana,sans-serif">
+</font></font><p>
+	
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana">
+<a href="./files/gcdt.pdf">Paper </a>&nbsp;(PDF 5.76 MB) 
+</font>
+<p></p>
+<font face="verdana,sans-serif"><a href="./files/gcdt.mp4">Video</a>
+ <font color="#ffffff" face="Verdana">(2.17 MB) </font></font><font face="verdana,sans-serif">
+</font>
+<p></p>
+<font face="verdana,sans-serif"><font face="verdana,sans-serif"><font color="#ffffff" face="Verdana">
+Source Code: <a href="https://github.com/yingtix/">https://github.com/yingtix/</a>&nbsp;
+</font>
+
+</font><font face="verdana,sans-serif"> 
+</font></font><font face="Verdana" color="#ffffff"></font></p><p><font face="Verdana" color="#ffffff">
+Peng Fan, Min Tang, Ruofeng Tong, Lili He, Peng Du, and Hailong Li. 2026. gCDT: A Highly Parallel GPU Algorithm for Large-Scale
+Constrained Delaunay Triangulation. In ACM SIGGRAPH 2026 (SIGGRAPH Conference Papers '26), Journal Paper, Los Angeles,
+CA, USA. ACM, New York, NY, USA, 12 pages.
+</font><font face="verdana,sans-serif">
+</font></p><p><font face="verdana,sans-serif">&nbsp;&nbsp;&nbsp;@inproceedings{gcdt26,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author = {Fan, Peng and Tang, Min and Tong, Ruofeng and He, Lili and Du, Peng and Li, Hailong},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title = {{gCDT}:  A Highly Parallel GPU Algorithm for Large-Scale Constrained Delaunay Triangulation},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;booktitle = {Proceedings of SIGGRAPH 2026},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location = {Los Angeles, CA, USA},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pages = {1--12},
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;month = {July}
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year = {2026},
+<br>&nbsp;&nbsp;}
+</font></p>
+
+<h2><font face="verdana,sans-serif">&nbsp;</font></h2><font face="verdana,sans-serif">
+<h2>Related Links</h2> 
+<p><a href="../GCHD/">GPU-accelerated Certified Hausdorff Distance Between Triangle Meshes</a></p>
+<p><a href="../gDist/">gDist: Efficient Distance Computation between 3D Meshes on GPU</a></p>
+<p><a href="../CTSN/">CTSN: Predicting Cloth Deformation for Skeleton-based Characters with a Two-stream Skinning Network</a></p>
+<p><a href="../DCloth/">D-Cloth: Skinning-based Cloth Dynamic Prediction with a Three-stage Network</a></p>
+<p><a href="../NCloth/">N-Cloth: Predicting 3D Cloth Deformation with Mesh-Based Networks</a></p>
+<p><a href="../PCloth/">P-Cloth: Interactive Cloth Simulation on Multi-GPU Systems using Dynamic Matrix Assembly and Pipelined Implicit Integrators</a></p>
+<p><a href="../ICloth/">I-Cloth: Incremental Collision Handling for GPU-Based Interactive Cloth Simulation</a></p>
+<p><a href="../PSCC/">PSCC: Parallel Self-Collision Culling with Spatial Hashing on GPUs</a></p>
+<p><a href="../gpuCloth/">I-Cloth: API for fast and reliable cloth simulation with CUDA</a></p>
+<p><a href="../BVH-OR/">Efficient BVH-based Collision Detection Scheme with Ordering and Restructuring</a></p>
+<p><a href="http://gamma.cs.unc.edu/PCD/">MCCD: Multi-Core Collision Detection between Deformable Models using Front-Based Decomposition</a></p>
+<p><a href="http://gamma.cs.unc.edu/CBC/">Interactive Continuous Collision Detection between Deformable Models using Connectivity-Based Culling</a></p>
+<p><a href="http://gamma.cs.unc.edu/BSC/index.htm#TightCCD">TightCCD: Efficient and Robust Continuous Collision Detection using Tight Error Bounds</a></p>
+<p><a href="http://gamma.cs.unc.edu/BSC/">Fast and Exact Continuous Collision Detection with Bernstein Sign Classification</a></p>
+<p><a href="http://gamma.cs.unc.edu/gcloth/">A GPU-based Streaming Algorithm for High-Resolution Cloth Simulation</a></p>
+<p><a href="http://gamma.cs.unc.edu/CPF/">Continuous Penalty Forces</a></p>
+<p><a href="http://gamma.cs.unc.edu/DynamicB/">UNC dynamic model benchmark repository</a></p>
+<p><a href="http://gamma.cs.unc.edu/CSTREAMS/">Collision-Streams: Fast GPU-based Collision Detection for Deformable Models</a></p>
+<p><a href="http://gamma.cs.unc.edu/DNF/">Fast Continuous Collision Detection using Deforming Non-Penetration Filters</a></p>
+<p><a href="http://gamma.cs.unc.edu/RTRI/">Fast Collision Detection for Deformable Models using Representative-Triangles</a></p>
+<p><a href="http://gamma.cs.unc.edu/DEFORMCD/">DeformCD: Collision Detection between Deforming Objects</a></p>
+<p><a href="http://gamma.cs.unc.edu/SELFCD/">Self-CCD: Continuous Collision Detection for Deforming Objects</a></p>
+<p><a href="http://gamma.cs.unc.edu/CDCD/">Interactive Collision Detection between Deformable Models using Chromatic Decomposition</a></p>
+<p><a href="http://gamma.cs.unc.edu/DVD/">Fast Proximity Computation Among Deformable Models using Discrete Voronoi Diagrams</a></p>
+<p><a href="http://gamma.cs.unc.edu/CULLIDE/">CULLIDE: Interactive Collision Detection between Complex Models using Graphics Hardware </a></p>
+<p><a href="http://gamma.cs.unc.edu/RCULLIDE/">RCULLIDE: Fast and Reliable Collision Culling using Graphics Processors </a></p>
+<p><a href="http://gamma.cs.unc.edu/QCULLIDE/">Quick-CULLIDE: Efficient Inter- and Intra-Object Collision Culling using Graphics Hardware</a></p>
+<p><a href="http://gamma.cs.unc.edu/research/collision/">Collision Detection</a></p>
+<p><a href="http://gamma.cs.unc.edu/">UNC GAMMA Group </a></p>
+	
+<h2>Acknowledgements</h2>
+<p>
+This research is supported in part by the Leading Goose R&D Program of Zhejiang under Grant No. 2024C01103.
+<p>&nbsp;</p>
+<p></p><p><br><a href="mailto:tang_m@zju.edu.cn">tang_m@zju.edu.cn</a> 
+</p><p></p></font>
+</font></p:colorscheme></font></body></html>
