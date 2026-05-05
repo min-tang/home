@@ -5,10 +5,11 @@
 
 
 ## Summary
-I am currently a faculty member at the College of Computer Science and Technology, Zhejiang University, China - a place I consider home, having received my B.S., M.S., and Ph.D. here in 1994, 1996, and 1999, respectively. 
-I've been fortunate enough to broaden my perspectives through opportunities as a visiting scholar, first at Wichita State University from June 2003 to May 2004 and later at the University of North Carolina at Chapel Hill, from April 2007 to April 2008 and again from September 2016 to April 2017. 
-My inquisitive nature has led me to delve into diverse topics like solid modeling, collision detection/handling, cloth simulation, and GPU-based computation acceleration. My curiosity and persistent endeavors have resulted in contributing over 180 papers in journals and conferences, including more than 80 SCI-indexed articles. Some of these include conferences like SIGGRAPH, SIGGRAPH Asia, AAAI and CVPR, and journals like ACM Transaction on Graphics and IEEE Transactions on Visualization and Computer Graphics, to name a few.
-In my commitment to the field of computer science, I humbly partake as a senior member of the CCF while also maintaining active membership with the ACM and the IEEE.
+I am currently a faculty member at the College of Artificial Intelligence, Zhejiang University, China. I joined the College on January 1, 2026, following my long-standing affiliation with the College of Computer Science and Technology, Zhejiang University. Zhejiang University is a place I consider home, where I received my B.S., M.S., and Ph.D. degrees in 1994, 1996, and 1999, respectively.
+Over the years, I have been fortunate to broaden my academic horizons through visiting scholar experiences at Wichita State University from June 2003 to May 2004, and at the University of North Carolina at Chapel Hill from April 2007 to April 2008 and again from September 2016 to April 2017.
+My research interests are driven by curiosity and span a range of topics, including solid modeling, collision detection and handling, cloth simulation, and GPU-based computational acceleration. Through these efforts, I have published more than 180 papers in journals and conferences, including over 80 SCI-indexed articles. My work has appeared in leading conferences such as SIGGRAPH, SIGGRAPH Asia, AAAI, and CVPR, and in journals such as ACM Transactions on Graphics and IEEE Transactions on Visualization and Computer Graphics.
+I also actively contribute to the broader computer science community as a senior member of the CCF and as a member of both the ACM and the IEEE.
+
 
 I have served as a reviewer for many international conferences (SIGGRAPH, SIGGRPAH Asia, I3D, HPG, WSCG, ICRA, AAAI, etc.) and journals (ACM Transaction on Graphics, IEEE Transactions on Visualization and Computer Graphics, IEEE Transactions on Haptics, The Visual Computer, etc.) and served as:
 - Technical Paper Committee Member of SIGGRAPH Asia 2023,
